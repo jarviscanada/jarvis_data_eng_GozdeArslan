@@ -1,12 +1,9 @@
 #! /bin/sh
-
-
 cmd=$1
 db_username=$2
 db_password=$3
 
 #Start docker
-#Make sure you understand `||` cmd
 #this is checks if the server running first than starts
 sudo systemctl status docker || systemctl start docker
 
@@ -36,33 +33,26 @@ case $cmd in
 	docker run --name jrvs-psql -e POSTGRES_PASSWORD=$PGPASSWORD -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
 	exit $?
 	;;
-#start
-  start|stop)
+
+ start)
   #check instance status; exit 1 if container has not been created
-  if [ $container_status -ne 2 ]; then
-  echo "Container not created"
+  if [ $container_status -ne 1 ]; then
+  echo "Container has not been created"
    exit 1
-  else
-    docker container $cmd jrvs-psql
-    docker container start jrvs-psql
+  fi
+
+  docker container start jrvs-psql
     exit$?
-  fi
-;;
-#stop
- start|stop)
-  if [ $container_status -ne 2 ]; then
-    echo "Container not created"
-     exit 1
-    else
-      docker container stop jrvs-psql
-      exit$?
-  fi
-;;
+  ;;
+ stop)
+   if [ $container_status -ne 1 ]; then
+     echo "Container has not been created"
+      exit 1
+     fi
 
-     #Start or stop the container
-
-
-
+     docker container stop jrvs-psql
+       exit$?
+     ;;
 
   *)
 	echo 'Illegal command'
