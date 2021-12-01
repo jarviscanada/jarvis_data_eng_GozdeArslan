@@ -1,3 +1,4 @@
+
 #! /bin/sh
 cmd=$1
 db_username=$2
@@ -60,3 +61,5 @@ case $cmd in
 	exit 1
 	;;
 esac 
+
+
