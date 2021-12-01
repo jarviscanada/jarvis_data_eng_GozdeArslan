@@ -5,7 +5,7 @@ db_password=$3
 
 #Start docker
 #this is checks if the server running first than starts
-sudo systemctl status docker || systemctl start docker
+sudo systemctl status docker ||sudo  systemctl start docker
 
 #check container status (try the following cmds on terminal)
 docker container inspect jrvs-psql
