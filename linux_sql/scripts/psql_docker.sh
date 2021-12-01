@@ -1,4 +1,5 @@
 
+
 #!bin/bash
 
 echo  "Hello World"
@@ -11,7 +12,7 @@ db_password=$3
 
 #Start docker
 #this is checks if the server running first than starts
-sudo systemctl status docker || systemctl start docker
+sudo systemctl status docker ||sudo  systemctl start docker
 
 #check container status (try the following cmds on terminal)
 docker container inspect jrvs-psql
@@ -35,7 +36,7 @@ case $cmd in
   fi
 
   #Create container
-	docker volume  create pgdata
+	docker volume create pgdata  
 	docker run --name jrvs-psql -e POSTGRES_PASSWORD=$PGPASSWORD -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
 	exit $?
 	;;
@@ -66,4 +67,8 @@ case $cmd in
 	exit 1
 	;;
 esac 
+
+
+
+
 
