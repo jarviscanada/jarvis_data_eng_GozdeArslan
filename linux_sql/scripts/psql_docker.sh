@@ -36,14 +36,15 @@ case $cmd in
   fi
 
   #Create container
-	docker volume create pgdata  
+	docker volume  create db_username
+
 	docker run --name jrvs-psql -e POSTGRES_PASSWORD=$PGPASSWORD -d -v pgdata:/var/lib/postgresql/data -p 5432:5432 postgres:9.6-alpine
 	exit $?
 	;;
 
  start)
   #check instance status; exit 1 if container has not been created
-  if [ $container_status -ne 1 ]; then
+  if [ $container_status -ne 0 ]; then
   echo "Container has not been created"
    exit 1
   fi
@@ -52,7 +53,7 @@ case $cmd in
     exit$?
   ;;
  stop)
-   if [ $container_status -ne 1 ]; then
+   if [ $container_status -ne 0 ]; then
      echo "Container has not been created"
       exit 1
      fi
