@@ -2,7 +2,7 @@
 
 
 ## Introduction
-The Linux cluster Monitoring agent project contains solutions and aids in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS)Postgres Database every minute. The LCA team will be able to help servers in need by having records of each node and node monitoring systems.
+The Linux cluster Monitoring agent project contains solutions and aids in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration(LCA) team will be able to help servers in need by having records of each node and node monitoring systems.
 
 
 
