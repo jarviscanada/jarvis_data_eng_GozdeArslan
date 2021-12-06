@@ -57,11 +57,8 @@ The Linux cluster Monitoring agent project contains solutions and aids in the cr
 
 ## Architecture and Design
 
+Diagram below illustrates architecture of project. 
 
-
-## Database & Tables
-
-Diagram below illustartes the architecture of project
 
 ## Script Description
 
