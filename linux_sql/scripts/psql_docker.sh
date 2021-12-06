@@ -1,5 +1,3 @@
-
-
 #! /bin/sh
 cmd=$1
 db_username=$2
