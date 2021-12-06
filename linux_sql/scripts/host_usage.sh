@@ -11,6 +11,7 @@ psql_password=$5
       echo 'Create requires username and password'
       exit 1
     fi
+
     #save machine statistics in MB and current machine hostname variables
     vmstat_mb=$(vmstat --unit M)
     hostname=$(hostname -f)

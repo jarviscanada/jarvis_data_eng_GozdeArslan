@@ -11,8 +11,8 @@ psql_password=$5
       echo 'Error!Missing arguments. Please Enter arguments as this format'
       exit 1
     fi
-    #save machine statistics in MB and current machine hostname variables
 
+    #save machine statistics in MB and current machine hostname variables
     lscpu_out=`lscpu`
     hostname=$(hostname -f)
     vmstat_out=$(vmstat --unit M)
