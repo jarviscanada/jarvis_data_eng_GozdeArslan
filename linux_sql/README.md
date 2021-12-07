@@ -124,7 +124,7 @@ The application runs on a single machine rather than a Linux cluster. Along with
 
 ## Deployment
 
-The project was deployed on Github from the JRD (Jarvis Remote Desktop).Database managed by using Postgres Docker. Host agent timed controlled by the Crontab.
+The project source code deployed on Github from the JRD (Jarvis Remote Desktop).Database managed by using Postgres Docker. Host agent timed controlled by the Crontab.
 
 ## Improvements
 
