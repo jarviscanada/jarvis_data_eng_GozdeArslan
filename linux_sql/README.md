@@ -2,7 +2,7 @@
 
 
 ## Introduction
-The Linux cluster Monitoring agent project contains solutions and aids in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration(LCA) team will be able to help servers in need by having records of each node and node monitoring systems.
+The Linux cluster Monitoring agent project contains solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems.
 
 
 
@@ -16,7 +16,7 @@ The Linux cluster Monitoring agent project contains solutions and aids in the cr
  
      - Git / Github
  
-    -  IntelliJ IDEA 
+     - IntelliJ IDEA 
 
 
 ## Quick Start
@@ -70,6 +70,7 @@ The Linux cluster Monitoring agent project contains solutions and aids in the cr
 
 Utilises docker to set up a psql instance.It creates,starts,stops a docker container to operate the Postgres database.
 
+#### Usage
 
 ```./psql_docker.sh create db_username db_password```
 
@@ -77,11 +78,15 @@ Utilises docker to set up a psql instance.It creates,starts,stops a docker conta
 
 Collects hardware specification data.Unlike host_usage.h ,this script will only be run once and first because of constant parameters of hardware.
 
-``` ./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password ``
+#### Usage
+
+``` ./scripts/host_info.sh psql_host psql_port db_name psql_user psql_password ```
 
 ### host_usage.sh
 
 Gathers usage information of running server and insert into host_usage table.Unlike host_info.sh ,this script needs to be executed every minuteby using Crontab.
+
+#### Usage
 
 ```./host_usage.sh psql_host psql_port db_name psql_user psql_password ```
 
@@ -89,17 +94,31 @@ Gathers usage information of running server and insert into host_usage table.Unl
 
 Contains create table statement to create host_info and host_usage if the tables are not exist.
 
+#### Usage
+
+``` ``` psql -h localhost -U postgres -d host_agent -f sql/ddl.sql ```
+
 ### queries.sql
 
 Includes queries to print some information to manage future improvements
+
 
 ### crontab
 
 Contains special bash lines that allows to run host_usage.h script every minute.
 
+#### Usage
+
  ``` * * * * * bash /<file Path>/host_usage.sh localhost 5432 host_agent postgres postgrepasword > /tmp/host_usage.log ```
      
+## Database Modeling
+The host_agent database in our container comprises two tables: host info and host usage.If these tables do not exist, they will be created.The hardware specifications (id,hostname,cpu number, etc.) will be stored in the host info table.The primary key will be "id," and fields will not be allowed to have null values.In addition, the host usage table contains hardware usage data (host id, cpu idle, memory free, etc.) that cannot have null values.Because the Relational database modelling structure is used, the foreign key will be host id. 
+
 ## Test
+
+The application runs on a single machine rather than a Linux cluster.Along with this , if the connection and firewalls are configured appropriately, It will also work in a cluster stage.Bash scripts tested on the Jarvis Remote Desktop where runs on the centOS 7.They are succesfully send the informartion (hardware specifiations and  resource use data) into the Database.
+
+
 
 ## Deployment
 
@@ -109,4 +128,4 @@ The project deployed on Github from the JRD (jarvis Remote Desktop).Database man
 
 - Error Handling : Current script does not navigate when there is an error data extracting process.
 
-- More SQL statements can be added to analyze some speifications.
+- More SQL statements can be added to analyze some specifications.
