@@ -5,7 +5,6 @@
 The Linux cluster Monitoring agent project contains solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems.
 
 
-
 - Technologies used in this project ;
 
      - Bash Scripts 
@@ -56,6 +55,10 @@ The Linux cluster Monitoring agent project contains solutions in the creation of
   Add this line in the file
   
   ``` * * * * * bash /<file Path>/host_usage.sh localhost 5432 host_agent postgres postgrepasword > /tmp/host_usage.log ```
+  
+## Implementation
+
+The project is implemented by using the technologies mentioned above(Docker, Postgres, IDE, Bash scripts, git). It will be using Jarvis Remote Desktop to run our project. The Bash scripts will create a Docker container instance that will also pull the Postgres database. Along with this, the docker will be created a project data volume that will allow us to persist data from the container. To persist data we will be querying the hardware information by using bash scripts. SQL scripts will create tables to hold values that are queried by the bash scripts. After storing data,  it will be extracting information from the database that will help the LCA team for analysis. 
 
 ## Architecture and Design
 
@@ -112,17 +115,16 @@ Contains special bash lines that allows to run host_usage.h script every minute.
  ``` * * * * * bash /<file Path>/host_usage.sh localhost 5432 host_agent postgres postgrepasword > /tmp/host_usage.log ```
      
 ## Database Modeling
-The host_agent database in our container comprises two tables: host info and host usage.If these tables do not exist, they will be created.The hardware specifications (id,hostname,cpu number, etc.) will be stored in the host info table.The primary key will be "id," and fields will not be allowed to have null values.In addition, the host usage table contains hardware usage data (host id, cpu idle, memory free, etc.) that cannot have null values.Because the Relational database modelling structure is used, the foreign key will be host id. 
+     
+The host_agent database in our container comprises two tables: host info and host usage. If these tables do not exist, they will be created. The hardware specifications (id, hostname,CPU number, etc.) will be stored in the host info table. The primary key will be "id," and fields will not be allowed to have null values. In addition, the host usage table contains hardware usage data (host id, CPU idle, memory-free, etc.) that cannot have null values. Because the Relational database modeling structure is used, the foreign and primary key will be host id. 
 
-## Test
+## Testing
 
-The application runs on a single machine rather than a Linux cluster.Along with this , if the connection and firewalls are configured appropriately, It will also work in a cluster stage.Bash scripts tested on the Jarvis Remote Desktop where runs on the centOS 7.They are succesfully send the informartion (hardware specifiations and  resource use data) into the Database.
-
-
+The application runs on a single machine rather than a Linux cluster. Along with this, if the connection and firewalls are configured appropriately, It will also work in a clustering stage. Bash scripts tested on the Jarvis Remote Desktop were run on CentOS 7. They are successfully sending the information (hardware specifications and resource use data) into the Database.
 
 ## Deployment
 
-The project deployed on Github from the JRD (jarvis Remote Desktop).Database managed by using Postgres Docker. Host agent timed controlled by the Crontab.
+The project was deployed on Github from the JRD (Jarvis Remote Desktop).Database managed by using Postgres Docker. Host agent timed controlled by the Crontab.
 
 ## Improvements
 
