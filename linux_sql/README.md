@@ -120,7 +120,7 @@ The host_agent database in our container comprises two tables: host info and hos
 
 ## Testing
 
-The application runs on a single machine rather than a Linux cluster. Along with this, if the connection and firewalls are configured appropriately, It will also work in a clustering stage. Bash scripts tested on the Jarvis Remote Desktop were run on CentOS 7. They are successfully sending the information (hardware specifications and resource use data) into the Database.
+The application runs on a single machine rather than a Linux cluster. Along with this, if the connection and firewalls are configured appropriately, It will also work in a clustering stage. Bash scripts tested on the Jarvis Remote Desktop were run on CentOS 7. They were successfully sended the information (hardware specifications and resource use data) into the Database.
 
 ## Deployment
 
