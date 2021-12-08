@@ -1,7 +1,7 @@
 # Preferred name (Characters only)
 name: "John Smith"
 # Your GitHub repo root URL
-github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan
+github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_demo
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
@@ -19,7 +19,7 @@ skills:
     - Git
   # At least 5 skills
   competent:
-    - C/C++
+    - Donec
     - fermentum
     - Donec
     - fermentum
