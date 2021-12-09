@@ -116,7 +116,23 @@ Contains special bash lines that allows to run host_usage.h script every minute.
 
 ## Database Modeling
 
-The host_agent database in our container comprises two tables: host info and host usage. If these tables do not exist, they will be created. The hardware specifications (id, hostname,CPU number, etc.) will be stored in the host info table. The primary key will be "id," and fields will not be allowed to have null values. In addition, the host usage table contains hardware usage data (host id, CPU idle, memory-free, etc.) that cannot have null values. Because the Relational database modeling structure is used, the foreign and primary key will be host id.
+The host_agent database in our container comprises two tables: host info and host usage. If these tables do not exist, they will be created. The hardware specifications (id, hostname,CPU number, etc.) will be stored in the host info table. The primary key will be "id," and fields will not be allowed to have null values. In addition, the host usage table contains hardware usage data (host id, CPU idle, memory-free, etc.) that cannot have null values. Because the Relational database modeling structure is used, the foreign and primary key will be host id.The tables below illustrate data fields in each table.
+
+
+Host information table shows hardware specifications data;
+
+![image](https://user-images.githubusercontent.com/71332538/145317887-46cd7bf0-624e-43bf-a3e2-e90c9028586f.png)    
+   
+
+ Host Usage table shows resource usage data;
+    
+![image](https://user-images.githubusercontent.com/71332538/145317978-a9d6d563-35dd-496c-95fa-c51e7245cc62.png)
+
+
+ 
+ 
+    
+
 
 ## Testing
 
@@ -130,4 +146,6 @@ The project source code deployed on Github from the JRD (Jarvis Remote Desktop).
 
 - Error Handling : Current script does not navigate when there is an error data extracting process.
 
-- More SQL statements can be added to analyze some specifications.
+- More SQL statements can be added to analyze some parameters or specifications.
+
+
