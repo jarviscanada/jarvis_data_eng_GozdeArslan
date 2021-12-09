@@ -7,20 +7,20 @@ The Linux cluster Monitoring agent project contains solutions in the creation of
 
 - Technologies used in this project ;
 
-     - Bash Scripts 
- 
-     - Docker
- 
-     - PostgresSQL Database 
- 
-     - Git / Github
- 
-     - IntelliJ IDEA 
+    - Bash Scripts
+
+    - Docker
+
+    - PostgresSQL Database
+
+    - Git / Github
+
+    - IntelliJ IDEA
 
 
 ## Quick Start
 
-- Start Docker if the server is not running 
+- Start Docker if the server is not running
 
 ```sudo systemctl status docker || sudo systemctl start docker```
 
@@ -32,7 +32,7 @@ The Linux cluster Monitoring agent project contains solutions in the creation of
 
 ```./psql_docker.sh start ```
 
-```./psql_docker.sh stop ``` 
+```./psql_docker.sh stop ```
 
 - Create tables using ddl.sql
 
@@ -40,34 +40,35 @@ The Linux cluster Monitoring agent project contains solutions in the creation of
 
 - Insert hardware specs data into the DB
 
- ```./host_info.sh psql_host psql_port db_name psql_user psql_password ```
- 
+```./host_info.sh psql_host psql_port db_name psql_user psql_password ```
+
 - Insert hardware usage data into the DB
 
 ```./host_usage.sh psql_host psql_port db_name psql_user psql_password ```
 
 - Crontab setup
 
-  Edit crontab file 
-  
-    ``` crontab -e ```
-    
+  Edit crontab file
+
+  ``` crontab -e ```
+
   Add this line in the file
-  
+
   ``` * * * * * bash /<file Path>/host_usage.sh localhost 5432 host_agent postgres postgrepasword > /tmp/host_usage.log ```
-  
+
 ## Implementation
 
-The project is implemented by using the technologies mentioned above(Docker, Postgres, IDE, Bash scripts, git). It will be using Jarvis Remote Desktop to run our project. The Bash scripts will create a Docker container instance that will also pull the Postgres database. Along with this, the docker will be created a project data volume that will allow us to persist data from the container. To persist data we will be querying the hardware information by using bash scripts. SQL scripts will create tables to hold values that are queried by the bash scripts. After storing data,  it will be extracting information from the database that will help the LCA team for analysis. 
+The project is implemented by using the technologies mentioned above(Docker, Postgres, IDE, Bash scripts, git). It will be using Jarvis Remote Desktop to run our project. The Bash scripts will create a Docker container instance that will also pull the Postgres database. Along with this, the docker will be created a project data volume that will allow us to persist data from the container. To persist data we will be querying the hardware information by using bash scripts. SQL scripts will create tables to hold values that are queried by the bash scripts. After storing data,  it will be extracting information from the database that will help the LCA team for analysis.
 
 ## Architecture and Design
 
-  Diagram below illustrates architecture of project. 
+Diagram below illustrates architecture of project.
 
-  ![image](https://user-images.githubusercontent.com/71332538/144785085-455e1873-5b24-4776-b698-a28eadac1400.png)
+![image](https://user-images.githubusercontent.com/71332538/144785085-455e1873-5b24-4776-b698-a28eadac1400.png)
 
 
 ## Script Description
+
 
 ### psql_docker.sh
 
@@ -112,11 +113,27 @@ Contains special bash lines that allows to run host_usage.h script every minute.
 
 #### Usage
 
- ``` * * * * * bash /<file Path>/host_usage.sh localhost 5432 host_agent postgres postgrepasword > /tmp/host_usage.log ```
-     
+``` * * * * * bash /<file Path>/host_usage.sh localhost 5432 host_agent postgres postgrepasword > /tmp/host_usage.log ```
+
 ## Database Modeling
-     
-The host_agent database in our container comprises two tables: host info and host usage. If these tables do not exist, they will be created. The hardware specifications (id, hostname,CPU number, etc.) will be stored in the host info table. The primary key will be "id," and fields will not be allowed to have null values. In addition, the host usage table contains hardware usage data (host id, CPU idle, memory-free, etc.) that cannot have null values. Because the Relational database modeling structure is used, the foreign and primary key will be host id. 
+
+The host_agent database in our container comprises two tables: host info and host usage. If these tables do not exist, they will be created. The hardware specifications (id, hostname,CPU number, etc.) will be stored in the host info table. The primary key will be "id," and fields will not be allowed to have null values. In addition, the host usage table contains hardware usage data (host id, CPU idle, memory-free, etc.) that cannot have null values. Because the Relational database modeling structure is used, the foreign and primary key will be host id.The tables below illustrate data fields in each table.
+
+
+Host information table shows hardware specifications data;
+
+![image](https://user-images.githubusercontent.com/71332538/145317887-46cd7bf0-624e-43bf-a3e2-e90c9028586f.png)    
+   
+
+ Host Usage table shows resource usage data;
+    
+![image](https://user-images.githubusercontent.com/71332538/145317978-a9d6d563-35dd-496c-95fa-c51e7245cc62.png)
+
+
+ 
+ 
+    
+
 
 ## Testing
 
@@ -130,4 +147,6 @@ The project source code deployed on Github from the JRD (Jarvis Remote Desktop).
 
 - Error Handling : Current script does not navigate when there is an error data extracting process.
 
-- More SQL statements can be added to analyze some specifications.
+- More SQL statements can be added to analyze some parameters or specifications.
+
+
