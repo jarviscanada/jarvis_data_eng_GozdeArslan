@@ -122,17 +122,15 @@ The host_agent database in our container comprises two tables: host info and hos
 
 Host information table shows hardware specifications data;
 
-![image](https://user-images.githubusercontent.com/71332538/145317887-46cd7bf0-624e-43bf-a3e2-e90c9028586f.png)    
+![image](https://user-images.githubusercontent.com/71332538/145319985-23748dbf-e6e3-41c7-b3d8-86ab3a50aad5.png)
+
    
 
  Host Usage table shows resource usage data;
-    
-![image](https://user-images.githubusercontent.com/71332538/145317978-a9d6d563-35dd-496c-95fa-c51e7245cc62.png)
 
+![image](https://user-images.githubusercontent.com/71332538/145320009-8ab119f9-fb67-464f-9672-9db222126e90.png)
 
- 
- 
-    
+   
 
 
 ## Testing
