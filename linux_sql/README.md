@@ -69,6 +69,7 @@ Diagram below illustrates architecture of project.
 
 ## Script Description
 
+
 ### psql_docker.sh
 
 Utilises docker to set up a psql instance.It creates,starts,stops a docker container to operate the Postgres database.
