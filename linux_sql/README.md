@@ -118,6 +118,7 @@ Contains special bash lines that allows to run host_usage.h script every minute.
 
 The host_agent database in our container comprises two tables: host info and host usage. If these tables do not exist, they will be created. The hardware specifications (id, hostname,CPU number, etc.) will be stored in the host info table. The primary key will be "id," and fields will not be allowed to have null values. In addition, the host usage table contains hardware usage data (host id, CPU idle, memory-free, etc.) that cannot have null values. Because the Relational database modeling structure is used, the foreign and primary key will be host id.
 
+
 ## Testing
 
 The application runs on a single machine rather than a Linux cluster. Along with this, if the connection and firewalls are configured appropriately, It will also work in a clustering stage. Bash scripts tested on the Jarvis Remote Desktop were run on CentOS 7. They were successfully sended the information (hardware specifications and resource use data) into the Database.
