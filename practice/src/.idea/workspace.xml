@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06efcc53-12a9-4961-a067-fa9aa72ca61a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/main/java/ca/jrvs/practice/dataStructure/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/ca/jrvs/practice/dataStructure/HelloWorld.java" afterDir="false" />
+    <list default="true" id="b2f785e9-f249-4390-920f-7f602fe2768e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="06efcc53-12a9-4961-a067-fa9aa72ca61a" name="Changes" comment="" />
+      <changelist id="b2f785e9-f249-4390-920f-7f602fe2768e" name="Changes" comment="" />
       <created>1639426248434</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -62,6 +62,8 @@
       <workItem from="1639426251681" duration="935000" />
       <workItem from="1639428614228" duration="190000" />
       <workItem from="1639429317635" duration="981000" />
+      <workItem from="1639451886227" duration="80000" />
+      <workItem from="1639452016175" duration="7000" />
     </task>
     <servers />
   </component>
