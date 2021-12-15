@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a651f653-cecb-471c-9432-f3cf001c4f7d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../profile/profile.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../profile/profile.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../profile/profile.yaml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -36,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../profile/profile.yaml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
