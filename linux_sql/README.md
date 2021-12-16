@@ -100,7 +100,7 @@ Contains create table statement to create host_info and host_usage if the tables
 
 #### Usage
 
-``` ``` psql -h localhost -U postgres -d host_agent -f sql/ddl.sql ```
+``` psql -h localhost -U postgres -d host_agent -f sql/ddl.sql ```
 
 ### queries.sql
 
