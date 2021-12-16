@@ -8,15 +8,15 @@ public class RegexExcImp implements RegexExc {
     @Override
     public boolean matchJpeg(String filename) {
         String filePattern= ".*\\.(png|jpg)";
-        if (Pattern.compile(filePattern, Pattern.CASE_INSENSITIVE.filename)){
+      //  if (Pattern.compile(filename, Pattern.CASE_INSENSITIVE=filename)){
 
-            return true;
+        //    return true;
 
-        }else{
+       // }else{
 
 
             System.out.println("The png|jpg files does not exist");
-        }
+        //}
 
               return false;
     }
