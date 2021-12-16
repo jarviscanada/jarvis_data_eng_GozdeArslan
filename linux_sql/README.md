@@ -104,12 +104,12 @@ Contains create table statement to create host_info and host_usage if the tables
 
 ### queries.sql
 
-Includes queries to print some information to manage future improvements
+Includes queries to print some information to manage future improvements.
 
 
 ### crontab
 
-Contains special bash lines that allows to run host_usage.h script every minute.
+Contains special bash lines that allows to run host_usage.sh script every minute.
 
 #### Usage
 
