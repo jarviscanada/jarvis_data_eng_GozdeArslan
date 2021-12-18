@@ -1,7 +1,7 @@
 package ca.jrvs.apps.practice;
 
+
 import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
 /*
     private static final String IPV4_PATTERN =
@@ -20,31 +20,20 @@ System.out.println(p.matcher(line).find());*/
 public class RegexExcImp implements RegexExc {
 
     @Override
-    public boolean matchJpeg(String filename) {
-        String filePattern= ".*\\.(png|jpg)";
-      if (Pattern.compile(filename, Pattern.CASE_INSENSITIVE.filename)){
+    public Pattern matchJpeg(String filename) {
+        String filePattern=".*\\.(png|jpg)";
+     return Pattern.compile(filePattern);
 
-           return true;
-
-       }else{
-
-
-            System.out.println("The png|jpg files does not exist");
-        }
-
-              return false;
     }
 
     @Override
-    public boolean matchIP(String ip) {
+    public Pattern matchIP(String ip) {
 
 
      String ipPattern= "^(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\\.(?!$)|$)){4}$";
-                //"/^[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+$/";
 
+        return Pattern.compile(ipPattern);
 
-        boolean b = Pattern.matches("^\\s*$","^\\s*$");
-        return Pattern.compile(ip,Pattern.ipPattern);
     }
 
     @Override
@@ -53,7 +42,7 @@ public class RegexExcImp implements RegexExc {
                boolean b = Pattern.matches("^\\s*$","^\\s*$");
 
         return b;
-                //Pattern.matches("^\\s*$","^\\s*$");
+
     }
 
 }
