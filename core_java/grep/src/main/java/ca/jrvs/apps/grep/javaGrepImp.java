@@ -29,9 +29,11 @@ public class javaGrepImp implements javaGrep {
          javaGrepImp grepImp =new javaGrepImp();
 
          //Set arguments using setter
-        javaGrepImp.setRegex(args[0]);
-        javaGrepImp.setRootPath(args[1]);
-        javaGrepImp.setOutFile(args[3]);
+        grepImp.setRegex(args[0]);
+        grepImp.setRootPath(args[1]);
+        grepImp.setOutFile(args[3]);
+
+        grepImp.process();
 
     }
 
@@ -61,7 +63,7 @@ public class javaGrepImp implements javaGrep {
     }
 
     @Override
-    public static void setRootPath(String getRootPath) {
+    public  void setRootPath(String getRootPath) {
                this.rootPath=getRootPath;
     }
 
@@ -71,7 +73,7 @@ public class javaGrepImp implements javaGrep {
     }
 
     @Override
-    public static void setRegex(String regex) {
+    public void setRegex(String regex) {
        this.regex=regex;
     }
 
@@ -81,7 +83,7 @@ public class javaGrepImp implements javaGrep {
     }
 
     @Override
-    public static void setOutFile(String outfile) {
+    public  void setOutFile(String outfile) {
         this.outFile=outfile;
     }
 }
