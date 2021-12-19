@@ -12,11 +12,13 @@ public class javaGrepImp implements javaGrep {
     private String regex;
     private String  rootPath;
     private String outFile;
-    public static void main(String[] args) {
+
+
+    public static void main(String[] args) throws IOException {
 
 
 
-         if(args.lenght!=3){
+         if(args.length!=3){
 
              throw new IllegalArgumentException("USAGE: JavaGrep Regex outFile rootPath");
 
