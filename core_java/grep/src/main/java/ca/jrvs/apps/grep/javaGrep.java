@@ -18,7 +18,7 @@ public interface javaGrep {
      * @param rootDir
      * @return
      */
-    List<File> listfiles(String rootDir);
+    List<File> listFiles(String rootDir);
 
     /**
      *

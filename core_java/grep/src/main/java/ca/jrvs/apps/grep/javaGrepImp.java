@@ -2,25 +2,29 @@ package ca.jrvs.apps.grep;
 
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
+import org.apache.log4j.BasicConfigurator;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class javaGrepImp implements javaGrep {
-    final Logger logger = LoggerFactory.getLogger(javaGrep.class);
+ //   private static ORBConfiguratorImpl BasicConfigurator;
+    static final Logger logger = LoggerFactory.getLogger(javaGrep.class);
     private String regex;
-    private String  rootPath;
+    private String rootPath;
     private String outFile;
 
 
     public static void main(String[] args) throws IOException {
 
-
-
          if(args.length!=3){
 
-             throw new IllegalArgumentException("USAGE: JavaGrep Regex outFile rootPath");
+             throw new IllegalArgumentException("Error!! USAGE: JavaGrep Regex outFile rootPath");
 
 
          }
@@ -34,28 +38,63 @@ public class javaGrepImp implements javaGrep {
         grepImp.setRegex(args[0]);
         grepImp.setRootPath(args[1]);
         grepImp.setOutFile(args[3]);
-
-        grepImp.process();
+        try {
+            grepImp.process();
+        }catch (Exception message){
+            javaGrepImp.logger.error("Error unable to process",message);
+        }
 
     }
 
     @Override
     public void process() throws IOException {
+        List <String> lineMatched =new Arraylist<String>();
+        //   for (int i =0;i< ArrayList.length;)
+        for (File  file :listFiles(rootPath)){
+
+            for (String lines :readLines(file)){
+
+                if (containsPattern(lines)){
+                    lineMatched.add(lines);
+                    writeToFile(lineMatched);
+
+                }
+            }
+        }
+    }
+
+    public List <String> readLines(File file) throws IOException {
+        Path filePath = file.toPath();
+
+        return Files.readAllLines(filePath);
 
     }
 
     @Override
-    public List<File> listfiles(String rootDir) {
-        return null;
+    public List<File> listFiles(String rootDir) {
+         File file = new File (rootDir);
+         ArrayList<File> files =new ArrayList<File>(Arrays.asList(file.listFiles()));
+
+        // return Arrays.asList(file.listFiles());
+        return files;
+
     }
 
     @Override
     public boolean containsPattern(String line) {
-        return false;
+        return line.matches(regex);
     }
 
     @Override
     public void writeToFile(List<String> lines) throws IOException {
+        FileWriter fWriter = new FileWriter(outFile);
+        for (String line : lines){
+
+            fWriter.write(line);
+        }
+        fWriter.close();
+
+
 
     }
 
@@ -88,4 +127,5 @@ public class javaGrepImp implements javaGrep {
     public  void setOutFile(String outfile) {
         this.outFile=outfile;
     }
+
 }
