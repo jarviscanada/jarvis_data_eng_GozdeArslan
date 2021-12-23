@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public interface javaGrep {
+public interface JavaGrep {
 
 
     /**

@@ -12,9 +12,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class javaGrepImp implements javaGrep {
+public class JavaGrepImp implements JavaGrep {
  //   private static ORBConfiguratorImpl BasicConfigurator;
-    static final Logger logger = LoggerFactory.getLogger(javaGrep.class);
+    static final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
     private String regex;
     private String rootPath;
     private String outFile;
@@ -32,7 +32,7 @@ public class javaGrepImp implements javaGrep {
          //Use default logger config
 
         BasicConfigurator.configure();
-         javaGrepImp grepImp =new javaGrepImp();
+         JavaGrepImp grepImp =new JavaGrepImp();
 
          //Set arguments using setter
         grepImp.setRegex(args[0]);
@@ -41,14 +41,14 @@ public class javaGrepImp implements javaGrep {
         try {
             grepImp.process();
         }catch (Exception message){
-            javaGrepImp.logger.error("Error unable to process",message);
+            JavaGrepImp.logger.error("Error unable to process",message);
         }
 
     }
 
     @Override
     public void process() throws IOException {
-        List <String> lineMatched =new Arraylist<String>();
+        List <String> lineMatched =new ArrayList<String>();
         //   for (int i =0;i< ArrayList.length;)
         for (File  file :listFiles(rootPath)){
 
