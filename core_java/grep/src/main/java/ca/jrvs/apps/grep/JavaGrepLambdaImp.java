@@ -1,7 +1,14 @@
 package ca.jrvs.apps.grep;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class JavaGrepLambdaImp extends JavaGrepImp {
 
@@ -29,14 +36,38 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     }
 
     @Override
-    public List<String> readLines(File inputfile){
+    public List<String> readLines(File inputFile){
+              List<String> lines = new ArrayList<>();
+              String fName = inputFile.toString();
+              Path pathOfFile = Paths.get(fName);
 
-        return readLines(inputfile);
+              try{
+
+                  lines =Files.lines(pathOfFile).collect(Collectors.toList());
+                //  line =Files.list(Paths.get(rootDir)).map(Path::toFile).collect(Collectors.toList());
+
+
+              }catch(Exception ex){
+
+                  logger.error(ex.getMessage());
+              }
+
+
+
+
+
+        return lines;
     }
     @Override
     public List <File> listFiles(String rootDir){
-
-return listFiles(rootDir);
+        try {
+            List<File> files = Files.list(Paths.get(rootDir))
+                    .map(Path::toFile)
+                    .collect(Collectors.toList());
+        } catch (IOException ex) {
+            logger.error(ex.getMessage());
+        }
+        return listFiles(rootDir);
 
     }
 
