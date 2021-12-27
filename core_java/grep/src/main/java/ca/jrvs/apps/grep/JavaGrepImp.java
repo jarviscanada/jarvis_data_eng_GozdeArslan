@@ -6,14 +6,16 @@ import org.apache.log4j.BasicConfigurator;
 
 import java.io.*;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
+
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static java.io.FileDescriptor.in;
+
 public class JavaGrepImp implements JavaGrep {
- //   private static ORBConfiguratorImpl BasicConfigurator;
+
     static final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
     private String regex;
     private String rootPath;
@@ -49,24 +51,35 @@ public class JavaGrepImp implements JavaGrep {
     @Override
     public void process() throws IOException {
         List <String> lineMatched =new ArrayList<String>();
-        //   for (int i =0;i< ArrayList.length;)
+        //   for (int i =0;i< ArrayList.length;i++)
         for (File  file :listFiles(rootPath)){
-
             for (String lines :readLines(file)){
-
                 if (containsPattern(lines)){
                     lineMatched.add(lines);
                     writeToFile(lineMatched);
-
                 }
             }
         }
     }
 
     public List <String> readLines(File file) throws IOException {
-        Path filePath = file.toPath();
+        List <String> lines =new ArrayList<>();
+        BufferedReader bReader;
 
-        return Files.readAllLines(filePath);
+        try {
+            String line;
+            bReader = new BufferedReader(new FileReader(in));
+            line = bReader.readLine();
+            lines.add(line);
+          line=bReader.readLine();
+            bReader.close();
+        }catch (IOException ex){
+            ex.printStackTrace();
+
+
+        }
+
+        return lines;
 
     }
 
@@ -74,9 +87,7 @@ public class JavaGrepImp implements JavaGrep {
     public List<File> listFiles(String rootDir) {
          File file = new File (rootDir);
          ArrayList<File> files =new ArrayList<File>(Arrays.asList(file.listFiles()));
-
-        // return Arrays.asList(file.listFiles());
-        return files;
+         return files;
 
     }
 
