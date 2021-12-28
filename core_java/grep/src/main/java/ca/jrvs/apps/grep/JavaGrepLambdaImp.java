@@ -1,4 +1,4 @@
-package ca.jrvs.apps.grep;
+/*package ca.jrvs.apps.grep;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,8 +27,8 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
 
              }catch(Exception ex){
 
-                // ex.printStackTrace();
-                 JavaGrepImp.logger.error("Error unable to process",ex);
+                 ex.printStackTrace();
+                 //logger.warn("Error unable to process");
              }
 
 
@@ -72,3 +72,4 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     }
 
 }
+*/

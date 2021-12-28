@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public interface JavaGrep {
+public interface JavaGrep{
 
 
     /**
@@ -19,6 +19,8 @@ public interface JavaGrep {
      * @return
      */
     List<File> listFiles(String rootDir);
+
+    List<String> readLines(File inputFile) throws IOException;
 
     /**
      *
