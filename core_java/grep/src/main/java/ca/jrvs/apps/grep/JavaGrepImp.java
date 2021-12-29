@@ -1,8 +1,8 @@
 package ca.jrvs.apps.grep;
 
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
 import org.apache.log4j.BasicConfigurator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.List;
 
 public class JavaGrepImp implements JavaGrep {
 
-     static final Logger logger = LoggerFactory.getLogger(JavaGrepImp.class);
+     final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
     private String regex;
     private String rootPath;
     private String outFile;
@@ -40,7 +40,7 @@ public class JavaGrepImp implements JavaGrep {
         try {
             grepImp.process();
         }catch (Exception message){
-            JavaGrepImp.logger.error("Error unable to process",message);
+            grepImp.logger.error("Error unable to process",message);
         }
 
     }
@@ -49,31 +49,32 @@ public class JavaGrepImp implements JavaGrep {
     public void process() throws IOException {
         List <String> lineMatched =new ArrayList<>();
         //   for (int i =0;i< ArrayList.length;i++)
-        for (File  file :listFiles(getRootPath())){
-            for (String lines :readLines(file)){
-                if (containsPattern(lines)){
-                    lineMatched.add(lines);
-                    try{
-                        this.writeToFile(lineMatched);
+        try{
+            for (File  file :listFiles(getRootPath())) {
+                for (String lines : readLines(file)) {
+                    if (containsPattern(lines)) {
+                        lineMatched.add(lines);
                     }
-                    catch (IOException ex){
+                    this.writeToFile(lineMatched);
+                }
+            }
+            }catch (IOException ex){
 
                         throw new IOException("Cannot Write to File");
                     }
 
-                }
-            }
-        }
+
+
+
 
     }
 
     public List <String> readLines(File file) {
         List <String> lines =new ArrayList<>();
-        BufferedReader bReader;
 
-        try {
-            String line;
-            try {
+           try {
+                BufferedReader bReader;
+                String line;
                 bReader = new BufferedReader(new FileReader(file));
                 line = bReader.readLine();
                 lines.add(line);
@@ -82,17 +83,10 @@ public class JavaGrepImp implements JavaGrep {
 
                 ex.printStackTrace();
 
-            }
+            } catch (IOException e) {
+               e.printStackTrace();
+           }
 
-        }catch (IOException ex){
-
-            ex.printStackTrace();
-
-
-
-
-
-        }
 
         return lines;
 
