@@ -55,16 +55,14 @@ public class LambdaStreamExcImp implements  LambdaStreamExc{
 
     @Override
     public IntStream createIntStream(int start, int end) {
-      /*  IntStream intStream = IntStream.range(start, end);
-        return intStream;*/
+
         return IntStream.range(start, end);
     }
 
     @Override
     public DoubleStream squareRootIntStream(IntStream intStream) {
          DoubleStream stream =intStream.mapToDouble(n->(double)(n));
-
-       // return stream.map(Math.sqrt);
+         //return stream.map(Math.sqrt);
         return stream.map(n->n*n);
     }
 

@@ -58,9 +58,9 @@ public class JavaGrepImp implements JavaGrep {
                     this.writeToFile(lineMatched);
                 }
             }
-            }catch (IOException ex){
+            }catch (IOException message){
 
-                        throw new IOException("Cannot Write to File");
+            logger.error("Error unable to process",message);
                     }
 
 
@@ -79,12 +79,12 @@ public class JavaGrepImp implements JavaGrep {
                 line = bReader.readLine();
                 lines.add(line);
                 bReader.close();
-            }catch (FileNotFoundException ex){
+            }catch (FileNotFoundException message){
 
-                ex.printStackTrace();
+               logger.error("Error! Cannot Find File",message);
 
-            } catch (IOException e) {
-               e.printStackTrace();
+            } catch (IOException message) {
+               logger.error("Error unable to process",message);
            }
 
 
@@ -109,17 +109,17 @@ public class JavaGrepImp implements JavaGrep {
     @Override
     public void writeToFile(List<String> lines) throws IOException {
         File fileOut = new File(outFile);
-        FileOutputStream fos = new FileOutputStream(fileOut);
+        FileOutputStream fileStream = new FileOutputStream(fileOut);
 
-        BufferedWriter BuffWrite = new BufferedWriter(new OutputStreamWriter(fos));
+        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fileStream));
         for (String temp: lines) {
             try {
-                BuffWrite.write(temp);
-                BuffWrite.newLine();
-            }catch (IOException e) {
-                e.printStackTrace();
+                bufferedWriter.write(temp);
+                bufferedWriter.newLine();
+            }catch (IOException message) {
+                logger.error("Error! Cannot Write To File.",message);
             }
-        } BuffWrite.close();
+        } bufferedWriter.close();
 
 
 

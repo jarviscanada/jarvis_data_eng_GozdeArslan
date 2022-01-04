@@ -1,4 +1,4 @@
-/*package ca.jrvs.apps.grep;
+package ca.jrvs.apps.grep;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,8 +27,8 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
 
              }catch(Exception ex){
 
-                 ex.printStackTrace();
-                 //logger.warn("Error unable to process");
+                // ex.printStackTrace();
+                 javaGrepLambdaImp. logger.error("Error unable to process",ex);
              }
 
 
@@ -43,13 +43,13 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
 
               try{
 
-                  lines =Files.lines(pathOfFile).collect(Collectors.toList());
-                //  line =Files.list(Paths.get(rootDir)).map(Path::toFile).collect(Collectors.toList());
+                 // lines =Files.lines(pathOfFile).collect(Collectors.toList());
+                  lines=Files.list(Paths.get(getRootPath())).map(Path::toFile).collect(Collectors.toList());
 
 
               }catch(Exception ex){
 
-                  logger.error(ex.getMessage());
+                  logger.error("Error unable to process",ex);
               }
 
 
@@ -61,15 +61,12 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     @Override
     public List <File> listFiles(String rootDir){
         try {
-            List<File> files = Files.list(Paths.get(rootDir))
-                    .map(Path::toFile)
-                    .collect(Collectors.toList());
+            List<File> files = Files.list(Paths.get(rootDir)).map(Path::toFile).collect(Collectors.toList());
         } catch (IOException ex) {
-            logger.error(ex.getMessage());
+            logger.error("Error unable to process",ex);
         }
         return listFiles(rootDir);
 
     }
 
 }
-*/
