@@ -1,7 +1,5 @@
 
-#Introduction
-
-Discuss the design of each app. What does the app do? What technologies have you used? (e.g. core java, libraries, lambda, IDE, docker, etc..)
+# Introduction
 The Project design of application to search matching strings within the files by using grep commands.The grep commands will be able to read and write the files
 in the file directory.Searching the patterns that is done by regular expressions write the results to an output file in the root directory.
 
@@ -49,9 +47,9 @@ Java Grep Application
 
 ## Pseudocode
 
-`process` method pseudocode.
+- `process` method pseudocode.
 
- matchedLines = [] 
+ ``` matchedLines = [] 
 for file in listFilesRecursively(rootDir)
 for line in readLines(file)
 if containsPattern(line)
