@@ -43,11 +43,15 @@ Application Run with additional JVM options
 
 # Implemenation
 
+
 Java Grep Application
 
-## Pseudocode
+
+# Pseudocode
 
 - `process` method pseudocode.
+
+
 
 
          matchedLines = []
