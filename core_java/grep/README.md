@@ -49,12 +49,18 @@ Java Grep Application
 
 - `process` method pseudocode.
 
- ``` matchedLines = [] 
-for file in listFilesRecursively(rootDir)
-for line in readLines(file)
-if containsPattern(line)
-matchedLines.add(line)
-writeToFile(matchedLines) ```
+  
+         matchedLines = []
+        
+         for file in listFilesRecursively(rootDir)
+      
+                for line in readLines(file)
+                
+                 if containsPattern(line)
+                 
+                         matchedLines.add(line)
+                         
+                            writeToFile(matchedLines)
 
 
 
