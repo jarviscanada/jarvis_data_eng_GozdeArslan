@@ -19,6 +19,13 @@ The java database connection application enables a connection between a Java pro
 
   - DBeaver(ER Diagram)
 
+  - IntelliJ IDEA
+  
+  - PSQL
+  
+  - DBeaver(ER Diagram)
+  
+
 # Implementaiton
 ## ER Diagram
 
