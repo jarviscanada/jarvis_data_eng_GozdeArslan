@@ -41,7 +41,7 @@ Application Run with additional JVM options
 ``` java -Xms5m -Xmx5m \-cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [regex] [rootDirectory] [outfile] ```
 
 
-#Implemenation
+# Implemenation
 
 Java Grep Application 
 
