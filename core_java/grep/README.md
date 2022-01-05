@@ -1,5 +1,5 @@
 
-Introduction
+#Introduction
 
 Discuss the design of each app. What does the app do? What technologies have you used? (e.g. core java, libraries, lambda, IDE, docker, etc..)
 The Project design of application to search matching strings within the files by using grep commands.The grep commands will be able to read and write the files
@@ -44,6 +44,7 @@ Application Run with additional JVM options
 
 
 #Implemenation
+
 Java Grep Application 
 
 ## Pseudocode
@@ -60,24 +61,24 @@ writeToFile(matchedLines) ```
 
 
 ## Performance Issue
-(30-60 words)
+
 Discuss the memory issue and how would you fix it
 
 # Test
-How did you test your application manually? (e.g. prepare sample data, run some test cases manually, compare result)
 
-To test application ,There is an instance file that is includes lines of text (Shakespeare.txt).The application reads the lines by using java grep method called readLines. Along with this ,The instance output file used to write out results in to Output file includes matched lines by using application methods.
+To test application ,There is an instance file that includes lines of text (Shakespeare.txt).The application reads the lines by using java grep method called readLines. Along with this ,The instance output file used to write out results in to Output file includes matched lines by using application methods.
 
 
 # Deployment
-How you dockerize your app for easier distribution?
 
 Application Dockerized by using Docker image. Creting docker file allows us to carry openjdk:8-alpine configurations that will copy from JAR file and creates entry point configurations.
 
 
 # Improvement
-1-
-2-
+
+1-Use Java Stream APIs in the implementation rather than using java.util.List;
+
+2- Use more and proper lambda implementation.
 
 
 
