@@ -1,6 +1,5 @@
 # Introduction
 
-What does this app do? What technologies your have used? (JDBC, PSQL, MVN, etc..)
 
 The java database connection application enables a connection between a Java program and a relational database management system (RDBMS).It uses DAO and Repository architectural patterns, as well as certain advanced JDBC principles.
 
@@ -18,13 +17,13 @@ The java database connection application enables a connection between a Java pro
   
     - PSQL
   
-    - DBeaver
+    - DBeaver(ER Diagram)
   
 # Implementaiton
 ## ER Diagram
-ER diagram
 
-https://i.imgur.com/xqxU016.png
+
+![image](https://i.imgur.com/xqxU016.png)
 
 ## Design Patterns
 
@@ -34,5 +33,5 @@ On the other hand, Repository design patterns deals with data and hides requests
 
 
 # Test
-The application tested using Docker container and Postgres SQL database.The docker container runs the postgres database that is includes all the tables that is used in the application(customer,salesperson,products etc.Along with this all the tables created with the sql scripts that involves in the project directory.
+The application tested using Docker container and Postgres SQL database.The docker container runs the postgres database that is includes all the tables which is used in the application(customer,salesperson,products etc.).Along with this all the tables created by the sql scripts that involves in the project directory.
 All the application data used to test application methods and DAO manipulations.
