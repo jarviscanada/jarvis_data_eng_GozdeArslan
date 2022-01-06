@@ -8,15 +8,15 @@ The Linux cluster Monitoring agent project contains solutions in the creation of
 
 - Technologies used in this project ;
 
-    - Bash Scripts
+  - Bash Scripts
 
-    - Docker
+  - Docker
 
-    - PostgresSQL Database
+  - PostgresSQL Database
 
-    - Git / Github
+  - Git / Github
 
-    - IntelliJ IDEA
+  - IntelliJ IDEA
 
 
 ## Quick Start
@@ -125,13 +125,13 @@ Host information table shows hardware specifications data;
 
 ![image](https://user-images.githubusercontent.com/71332538/145319985-23748dbf-e6e3-41c7-b3d8-86ab3a50aad5.png)
 
-   
 
- Host Usage table shows resource usage data;
+
+Host Usage table shows resource usage data;
 
 ![image](https://user-images.githubusercontent.com/71332538/145320009-8ab119f9-fb67-464f-9672-9db222126e90.png)
 
-   
+
 
 
 
