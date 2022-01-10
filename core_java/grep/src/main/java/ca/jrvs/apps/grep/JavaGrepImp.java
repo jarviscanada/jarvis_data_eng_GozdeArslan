@@ -1,8 +1,6 @@
 package ca.jrvs.apps.grep;
 
 import org.apache.log4j.BasicConfigurator;
-
-import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +8,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 
 public class JavaGrepImp implements JavaGrep {
 
@@ -36,7 +35,7 @@ public class JavaGrepImp implements JavaGrep {
         grepImp.setRegex(args[0]);
         grepImp.setRootPath(args[1]);
         grepImp.setOutFile(args[2]);
-        grepImp.process();
+       grepImp.process();
 
         try {
             grepImp.process();
@@ -56,13 +55,13 @@ public class JavaGrepImp implements JavaGrep {
                     if (containsPattern(lines)) {
                         lineMatched.add(lines);
                     }
-                    this.writeToFile(lineMatched);
+                    writeToFile(lineMatched);
                 }
             }
-            }catch (IOException message){
+        }catch (IOException message){
 
             logger.error("Error unable to process",message);
-                    }
+        }
 
 
 
@@ -73,20 +72,20 @@ public class JavaGrepImp implements JavaGrep {
     public List <String> readLines(File file) {
         List <String> lines =new ArrayList<>();
 
-           try {
-                BufferedReader bReader;
-                String line;
-                bReader = new BufferedReader(new FileReader(file));
-                line = bReader.readLine();
-                lines.add(line);
-                bReader.close();
-            }catch (FileNotFoundException message){
+        try {
+            BufferedReader bReader;
+            String line;
+            bReader = new BufferedReader(new FileReader(file));
+            line = bReader.readLine();
+            lines.add(line);
+            bReader.close();
+        }catch (FileNotFoundException message){
 
-               logger.error("Error! Cannot Find File",message);
+            logger.error("Error! Cannot Find File",message);
 
-            } catch (IOException message) {
-               logger.error("Error unable to process",message);
-           }
+        } catch (IOException message) {
+            logger.error("Error unable to process",message);
+        }
 
 
         return lines;
@@ -97,7 +96,8 @@ public class JavaGrepImp implements JavaGrep {
     public List<File> listFiles(String rootDir) {
 
         File file = new File(rootDir);
-        ArrayList<File> files =new ArrayList<>(Arrays.asList(file.listFiles()));
+        List<File> files =new ArrayList<>(Arrays.asList(file.listFiles()));
+
         return files;
 
     }
