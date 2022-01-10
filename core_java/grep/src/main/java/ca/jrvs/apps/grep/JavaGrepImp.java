@@ -1,6 +1,8 @@
 package ca.jrvs.apps.grep;
 
 import org.apache.log4j.BasicConfigurator;
+
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,10 +11,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
 public class JavaGrepImp implements JavaGrep {
 
-     final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
+    final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
     private String regex;
     private String rootPath;
     private String outFile;

@@ -1,5 +1,7 @@
 package ca.jrvs.apps.grep;
 
+import org.junit.jupiter.api.Test;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,6 +13,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class JavaGrepLambdaImp extends JavaGrepImp {
+    
+
+
 
     public static void main(String[] args) {
         if (args.length!=3){
@@ -44,7 +49,7 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
               try{
 
                  // lines =Files.lines(pathOfFile).collect(Collectors.toList());
-                  lines=Files.list(Paths.get(getRootPath())).map(Path::toFile).collect(Collectors.toList());
+                  //lines=Files.list(Paths.get(getRootPath())).map(Path::toFile).collect(Collectors.toList());
 
 
               }catch(Exception ex){
