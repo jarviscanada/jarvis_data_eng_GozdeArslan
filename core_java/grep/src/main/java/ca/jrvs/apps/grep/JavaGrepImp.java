@@ -35,7 +35,7 @@ public class JavaGrepImp implements JavaGrep {
         grepImp.setRegex(args[0]);
         grepImp.setRootPath(args[1]);
         grepImp.setOutFile(args[2]);
-       grepImp.process();
+     //  grepImp.process();
 
         try {
             grepImp.process();
@@ -55,9 +55,10 @@ public class JavaGrepImp implements JavaGrep {
                     if (containsPattern(lines)) {
                         lineMatched.add(lines);
                     }
-                    writeToFile(lineMatched);
+
                 }
             }
+            writeToFile(lineMatched);
         }catch (IOException message){
 
             logger.error("Error unable to process",message);
