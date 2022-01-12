@@ -35,7 +35,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 
 ## Highlighted Projects
-**Web app for Movie Streaming** [[GitHub](https://github.com/gzarslan/A-movie-website)]: Designed movie streaming website in building Dynamic websites and Server-Side Web applications using Node.js and Express.
+**Web App for Movie Streaming** [[GitHub](https://github.com/gzarslan/A-movie-website)]: Designed movie streaming website in building Dynamic websites and Server-Side Web applications using Node.js and Express.
 
 
 ## Professional Experiences
@@ -58,8 +58,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 
 ## Miscellaneous
-- Problem Solving Techniques certificate  (2017)
-- Team- work training certificate (2017)
+- Problem Solving Techniques certificate (2017)
+- Team- work training certificate  (2017)
 - Reading
 - yoga
 - chess
