@@ -58,8 +58,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 
 ## Miscellaneous
-- Problem Solving Techniques (2017)
-- Team- work training (2017)
+- Problem Solving Techniques certificate  (2017)
+- Team- work training certificate (2017)
 - Reading
 - yoga
 - chess
