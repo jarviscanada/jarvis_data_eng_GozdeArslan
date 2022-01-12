@@ -3,7 +3,7 @@
     {
       "awards_achievements": [
         "Scholarship",
-        "Dean's List (Summer 2020): GPA : 4.0/4.0  ",
+        "Dean's List (Summer 2020): GPA : 4.0/4.0",
         "GPA: 3.7/4.0 "
       ],
       "degree": "Diploma of Applied Sciences",
@@ -12,7 +12,11 @@
       "school_name": "Seneca College"
     },
     {
-      "awards_achievements": null,
+      "awards_achievements": [
+        "Scholarship",
+        "Dean's List (Summer 2020): GPA : 4.0/4.0",
+        "GPA: 3.7/4.0 "
+      ],
       "degree": "Bachelor degree of Engineering",
       "department": "Industrial Engineering",
       "duration": "2010-2014",
@@ -23,7 +27,7 @@
   "highlighted_projects": [
     {
       "description": "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.",
-      "git_url": "https://github.com/gzarslan/A-movie-website-",
+      "git_url": "https://github.com/gzarslan/A-movie-website",
       "name": "Web app for Movie Streaming"
     },
     {
@@ -34,15 +38,15 @@
   ],
   "jarvis_projects": [
     {
-      "description": "The Linux cluster Monitoring agent project contains solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems. Technologies used in this project ;Bash Scripts,Docker,PostgresSQL Database,Git / Github, IntelliJ IDEA.",
+      "description": " Created solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems ",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
     {
       "description": [
-        "Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.",
-        "Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam."
+        " Twitter App:",
+        " JDBC App: Implemented java database connection application enables a connection between a Java program and a relational database management system (RDBMS).It uses DAO and Repository architectural patterns, as well as certain advanced JDBC principles.",
+        " Grep App: created application to search matching strings within the files by using grep commands.The grep commands will be able to read and write the files in the file directory.Searching the patterns that is done by regular expressions write the results to an output file in the root directory."
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
@@ -77,37 +81,24 @@
   "others": [
     {
       "bullets": [
-        "Udacity Machine Learning (2019)"
+        "Problem Solving Techniques (2017)",
+        "Team- work training (2017)"
       ],
       "title": "Certificates"
-    },
-    {
-      "bullets": [
-        "Winner"
-      ],
-      "title": "Awards"
-    },
-    {
-      "bullets": [
-        "Basketball player",
-        "Competitive gaming",
-        "Volunteer, ABC Food bank: Ut enim ad minim veniam"
-      ],
-      "title": "Activities/Hobbies"
     }
   ],
   "professional_experience": [
     {
-      "company": "JANTSA WHEEL INDUSTRY",
-      "description": "Analyzed product data to create a new system automation project associated with production requirements. Using excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations. Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated. Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values was written as required. Productivity was increased by 20%.Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "2016-2018",
-      "title": "Project Data and Method Engineer"
+      "company": "Jarvis Consulting Group",
+      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
+      "duration": "2021 - present",
+      "title": "Data Engineer Associate"
     },
     {
-      "company": "JARVIS CONSULTING GROUP",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
-      "duration": "Nov 2021-present",
-      "title": "Data Engineer Associate"
+      "company": "Jantsa Wheel Industry",
+      "description": "Analyzed product data to create a new system automation project associated with productionrequirements. Using excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations.Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated.Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values was written as required. Productivity was increased by 20%.",
+      "duration": "2016 - 2018",
+      "title": "Project Data and Method Engineer"
     }
   ],
   "skills": {
@@ -135,5 +126,5 @@
       "Git"
     ]
   },
-  "summary": " A hardworking and passionate data engineer. I want to apply my enthusiasm, superb analytical thinking, strong problem- solving skills and previous experience to provide best solutions for my employer."
+  "summary": "A hardworking and passionate data engineer. I want to apply my enthusiasm, superb analytical thinking, strong problem- solving skills and previous experience to provide best solutions for my employer."
 }
