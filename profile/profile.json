@@ -26,7 +26,7 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan",
   "highlighted_projects": [
     {
-      "description": "Donec mattis sed justo et sagittis.Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus ",
+      "description": "Designed movie streaming website in building Dynamic websites and Server-Side Web applications using Node.js and Express.",
       "git_url": "https://github.com/gzarslan/A-movie-website",
       "name": "Web app for Movie Streaming"
     }
@@ -39,7 +39,7 @@
     },
     {
       "description": [
-        " Twitter App:",
+        " Twitter App: Currenlty working on app",
         " JDBC App: Implemented java database connection application enables a connection between a Java program and a relational database management system (RDBMS).It uses DAO and Repository architectural patterns, as well as certain advanced JDBC principles.",
         " Grep App: created application to search matching strings within the files by using grep commands.The grep commands will be able to read and write the files in the file directory.Searching the patterns that is done by regular expressions write the results to an output file in the root directory."
       ],
@@ -80,12 +80,20 @@
         "Team- work training (2017)"
       ],
       "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Reading",
+        "yoga",
+        "chess"
+      ],
+      "title": "Hobbies"
     }
   ],
   "professional_experience": [
     {
       "company": "Jarvis Consulting Group",
-      "description": "Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.",
+      "description": "Used Linux, Java, Docker, and Postgres, designed, created, and tested several software applications. Used Agile Methodologies to collaborate with my team.",
       "duration": "2021 - present",
       "title": "Data Engineer Associate"
     },
@@ -121,5 +129,5 @@
       "Git"
     ]
   },
-  "summary": "A hardworking and passionate data engineer. I want to apply my enthusiasm, superb analytical thinking, strong problem- solving skills and previous experience to provide best solutions for my employer."
+  "summary": "After working on several engineering projects that incorporated data-driven software tools, I determined to sharpen my software abilities to put my passion for the software and data industries to effective use. Along with this, I am a recent Seneca College Computer Science graduate. Throughout my studies, I have worked on a variety of research projects in object-oriented programming, database management, and web development. Involved in and handled many team initiatives that aided in the development of various teamwork roles and leadership skills. Working as a data engineer or analyst position piqued my interest. I'm presently employed as a data engineer associate at the Jarvis Consulting Group, where I develop software applications using Linux and Java tools while adhering to the Agile approach."
 }
