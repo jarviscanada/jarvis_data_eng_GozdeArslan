@@ -80,11 +80,13 @@ public class JavaGrepImp implements JavaGrep {
             line = bReader.readLine();
             lines.add(line);
             bReader.close();
+
         }catch (FileNotFoundException message){
 
             logger.error("Error! Cannot Find File",message);
 
         } catch (IOException message) {
+
             logger.error("Error unable to process",message);
         }
 
