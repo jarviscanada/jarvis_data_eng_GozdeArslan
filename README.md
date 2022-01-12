@@ -1,6 +1,6 @@
 # Gozde Arslan . Jarvis Consulting
 
- A hardworking and passionate data engineer. I want to apply my enthusiasm, superb analytical thinking, strong problem- solving skills and previous experience to provide best solutions for my employer.
+After working on several engineering projects that incorporated data-driven software tools, I determined to sharpen my software abilities to put my passion for the software and data industries to effective use. Along with this, I am a recent Seneca College Computer Science graduate. Throughout my studies, I have worked on a variety of research projects in object-oriented programming, database management, and web development. Involved in and handled many team initiatives that aided in the development of various teamwork roles and leadership skills. Working as a data engineer or analyst position piqued my interest. I'm presently employed as a data engineer associate at the Jarvis Consulting Group, where I develop software applications using Linux and Java tools while adhering to the Agile approach.
 
 ## Skills
 
@@ -15,13 +15,13 @@
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/linux_sql)]: The Linux cluster Monitoring agent project contains solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems. Technologies used in this project ;Bash Scripts,Docker,PostgresSQL Database,Git / Github, IntelliJ IDEA.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/linux_sql)]: Provided  solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems 
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/core_java)]:
       
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
+  -  Twitter App: Currenlty working on app
+  -  JDBC App: Implemented java database connection application enables a connection between a Java program and a relational database management system (RDBMS).It uses DAO and Repository architectural patterns, as well as certain advanced JDBC principles.
+  -  Grep App: created application to search matching strings within the files by using grep commands.The grep commands will be able to read and write the files in the file directory.Searching the patterns that is done by regular expressions write the results to an output file in the root directory.
 
 **Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/springboot)]: Not Started
 
@@ -35,30 +35,31 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 
 ## Highlighted Projects
-**Web app for Movie Streaming** [[GitHub](https://github.com/gzarslan/A-movie-website-)]: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
-
-**Machine Learning**: Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem.
+**Web app for Movie Streaming** [[GitHub](https://github.com/gzarslan/A-movie-website)]: Designed movie streaming website in building Dynamic websites and Server-Side Web applications using Node.js and Express.
 
 
 ## Professional Experiences
 
-**Project Data and Method Engineer, JANTSA WHEEL INDUSTRY (2016-2018)**: Analyzed product data to create a new system automation project associated with production requirements. Using excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations. Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated. Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values was written as required. Productivity was increased by 20%.Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Data Engineer Associate, Jarvis Consulting Group (2021 - present)**: Used Linux, Java, Docker, and Postgres, designed, created, and tested several software applications. Used Agile Methodologies to collaborate with my team.
 
-**Data Engineer Associate, JARVIS CONSULTING GROUP (Nov 2021-present)**: Donec mattis sed justo et sagittis. Vestibulum lacinia nulla ipsum. Curabitur imperdiet nibh vitae leo lacinia laoreet. Nullam accumsan, lectus ut maximus ultricies, augue justo egestas mi, vel bibendum felis.
+**Project Data and Method Engineer, Jantsa Wheel Industry (2016 - 2018)**: Analyzed product data to create a new system automation project associated with productionrequirements. Using excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations.Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated.Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values was written as required. Productivity was increased by 20%.
 
 
 ## Education
 **Seneca College (2020-2021)**, Diploma of Applied Sciences, Computer Programming
 - Scholarship
-- Dean's List (Summer 2020): GPA : 4.0/4.0  
+- Dean's List (Summer 2020): GPA : 4.0/4.0
 - GPA: 3.7/4.0 
 
 **Kutahya Dumlupinar University (2010-2014)**, Bachelor degree of Engineering, Industrial Engineering
+- Scholarship
+- Dean's List (Summer 2020): GPA : 4.0/4.0
+- GPA: 3.7/4.0 
 
 
 ## Miscellaneous
-- Udacity Machine Learning (2019)
-- Winner
-- Basketball player
-- Competitive gaming
-- Volunteer, ABC Food bank: Ut enim ad minim veniam
+- Problem Solving Techniques (2017)
+- Team- work training (2017)
+- Reading
+- yoga
+- chess
