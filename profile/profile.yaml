@@ -68,10 +68,7 @@ highlighted_projects:
     #URL is optional
     git_url: "https://github.com/gzarslan/A-movie-website"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem."
-  - name: "Machine Learning"
-    git_url:
-    description: "Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus. Aliquam varius pulvinar dapibus. Ut a tincidunt sem. Aenean sollicitudin fringilla erat ut imperdiet. Phasellus fermentum, enim vitae laoreet elementum, eros nisl hendrerit lorem."
+    description: "Donec mattis sed justo et sagittis.Suspendisse a tincidunt odio. Suspendisse posuere luctus aliquet. Quisque magna tellus, tempor vitae arcu sed, volutpat scelerisque lacus "
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
@@ -104,18 +101,19 @@ education:
     duration: "2010-2014"
     degree: "Bachelor degree of Engineering"
     department: "Industrial Engineering"
-    #optional
     awards_achievements:
       - "Scholarship"
       - "Dean's List (Summer 2020): GPA : 4.0/4.0"
       - "GPA: 3.7/4.0 "
 
-
 others:
+
     #category
    - title: "Certificates"
     #list of items
-    bullets:
-      - "Problem Solving Techniques (2017)"
-      - "Team- work training (2017)"
+     bullets:
+        - "Problem Solving Techniques (2017)"
+        - "Team- work training (2017)"
+
+
 
