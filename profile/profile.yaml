@@ -37,7 +37,7 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: " Created solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems "
+    description: "Provided  solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems "
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
@@ -113,7 +113,7 @@ education:
 
 others:
     #category
-  - title: "Certificates"
+   - title: "Certificates"
     #list of items
     bullets:
       - "Problem Solving Techniques (2017)"
