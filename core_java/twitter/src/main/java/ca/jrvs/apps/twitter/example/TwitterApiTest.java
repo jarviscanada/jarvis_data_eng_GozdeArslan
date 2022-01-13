@@ -6,6 +6,14 @@ import oauth.signpost.OAuthConsumer;
 
 public class TwitterApiTest {
 
+import com.google.gdata.util.common.base.PercentEscaper;
+import oauth.signpost.OAuthConsumer;
+import oauth.signpost.commonshttp.CommonsHttpOAuthConsumer;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
 
     private static String CONSUMER_KEY=System.getenv("consumerKey");
     private static String CONSUMER_SECRET=System.getenv("consumerSecret");
