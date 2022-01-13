@@ -23,16 +23,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
   -  JDBC App: Implemented java database connection application enables a connection between a Java program and a relational database management system (RDBMS).It uses DAO and Repository architectural patterns, as well as certain advanced JDBC principles.
   -  Grep App: created application to search matching strings within the files by using grep commands.The grep commands will be able to read and write the files in the file directory.Searching the patterns that is done by regular expressions write the results to an output file in the root directory.
 
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/cloud_devops)]: Not Started
-
 
 ## Highlighted Projects
 **Web App for Movie Streaming** [[GitHub](https://github.com/gzarslan/A-movie-website)]: Designed movie streaming website in building Dynamic websites and Server-Side Web applications using Node.js and Express.
@@ -42,7 +32,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 **Data Engineer Associate, Jarvis Consulting Group (2021 - present)**: Used Linux, Java, Docker, and Postgres, designed, created, and tested several software applications. Used Agile Methodologies to collaborate with my team.
 
-**Project Data and Method Engineer, Jantsa Wheel Industry (2016 - 2018)**: Analyzed product data to create a new system automation project associated with productionrequirements. Using excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations.Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated.Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values was written as required. Productivity was increased by 20%.
+**Project Data and Method Engineer, Jantsa Wheel Industry (2016 - 2018)**: Analyzed product data to create a new system automation project associated with productionrequirements. Using excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations.Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based.
 
 
 ## Education
@@ -52,14 +42,15 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 - GPA: 3.7/4.0 
 
 **Kutahya Dumlupinar University (2010-2014)**, Bachelor degree of Engineering, Industrial Engineering
-- Scholarship
-- Dean's List (Summer 2020): GPA : 4.0/4.0
-- GPA: 3.7/4.0 
 
 
 ## Miscellaneous
 - Problem Solving Techniques certificate (2017)
 - Team- work training certificate  (2017)
-- Reading
-- yoga
-- chess
+- Complete Python Bootcamp (Udemy)
+- Data Visualization for Data Analysis (Linkedin Learning)
+- Organization helper member - Dundas West Festival (2018)
+- Reading Novel (Sci-Fi)
+- Yoga
+- Wathing intellectual youtube channels and TedTalks
+- Chess
