@@ -48,10 +48,10 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 ## Miscellaneous
 - Problem Solving Techniques certificate (2017)
-- Teamwork training certificate  (2017)
+- Teamwork training certificate (2017)
 - Complete Python Bootcamp (Udemy)
 - Data Visualization for Data Analysis (Linkedin Learning)
-- Organization helper member - Dundas West Festival (2018)
+- Organization helper member / Dundas West Festival (2018)
 - Reading Novel (Sci-Fi)
 - Watching intellectual Youtube channels and TED Talks
 - Games: Chess, Table tennis
