@@ -19,7 +19,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/core_java)]:
       
-  -  Twitter App: Currently working on the project
+  -  Twitter App: Currently working on the project.
   -  JDBC App: Developed a Java Database Connection(JDBC) application that enables a connection between a Java program and a relational database management system (RDBMS). Implementation was completed by using  Java 8, RDBMS(PostgreSQL), Maven, Docker, IntelliJ IDEA, and Git/Git Flow. The application utilizes data access objects(DAOs) and Repository Architectural Patterns also certain advanced JDBC principles. Implemented CRUD operations for multiple DAOs that tested on the SQL queries. Maven build automation tools were used to handle the project. Testing and debugging were performed on the IntelliJ IDEA.
   -  Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage of memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git/Git Flow.
 
@@ -51,7 +51,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 - Teamwork training certificate (2017)
 - Complete Python Bootcamp (Udemy)
 - Data Visualization for Data Analysis (Linkedin Learning)
-- Organization helper member / Dundas West Festival (2018)
+- Volunteering, organization helper member - Dundas West Festival (2018)
 - Reading Novel (Sci-Fi)
 - Watching intellectual Youtube channels and TED Talks
 - Games: Chess, Table tennis
