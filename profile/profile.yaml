@@ -59,8 +59,7 @@ highlighted_projects:
     git_url: "https://github.com/gzarslan/Database-3/tree/main/assignment2"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Implemented a retail application that allows a user to add products to a cart for a specific consumer and estimates the overall cost of all the items. The order information is stored in the Oracle database after checkout. The project was developed by using the Oracle, PL/SQL, and C++ programming languages."
-                     
-
+          
 
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
