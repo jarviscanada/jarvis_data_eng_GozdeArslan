@@ -15,13 +15,13 @@ After working on several engineering projects that incorporated data-driven soft
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/linux_sql)]: Designed a Linux cluster hardware monitoring agent to screen server host statistics and data usage. Implemented project using various technologies such as CentOS, Bash/Shell, Docker, RDBMS/SQL/PostgreSQL, Crontab, and Git/Git Flow. Bash commands were used to collect host utilization data, which was processed using Crontab. The monitoring agent servers will run within a CentOS 7 environment. The server will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database, which is deployed through  Docker. Completed implementation on the IntelliJ IDEA which is one of the integrated developer environments. Managed and deployed the project by using Git/Git Flow. 
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/linux_sql)]: Designed a Linux cluster hardware monitoring agent to screen server host statistics and data usage. Implemented project using various technologies such as CentOS, Bash/Shell, Docker, RDBMS/SQL/PostgreSQL, Crontab, and Git/Git Flow. Bash commands were used to collect host utilization data, which was processed using Crontab. The monitoring agent servers will run within a CentOS 7 environment. The server will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database, which is deployed through Docker. Completed implementation on the IntelliJ IDEA which is one of the integrated developer environments. Managed and deployed the project by using Git/Git Flow.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/core_java)]:
       
   -  Twitter App: Currently working on the project
-  -  JDBC App: Developed a Java Database Connection(JDBC) application that enables a connection between a Java program and a relational database management system (RDBMS).  Implementation was completed by using  Java 8, RDBMS(PostgreSQL), Maven, Docker, IntelliJ IDEA, and Git/Git Flow.  The application utilizes data access objects (DAOs) and Repository Architectural Patterns also certain advanced JDBC principles. Implemented CRUD operations for multiple DAOs that tested on the SQL queries. Maven build automation tools were used to handle the project. Testing and debugging were performed on the IntelliJ IDEA.
-  -  Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git /Git Flow.
+  -  JDBC App: Developed a Java Database Connection(JDBC) application that enables a connection between a Java program and a relational database management system (RDBMS). Implementation was completed by using  Java 8, RDBMS(PostgreSQL), Maven, Docker, IntelliJ IDEA, and Git/Git Flow. The application utilizes data access objects(DAOs) and Repository Architectural Patterns also certain advanced JDBC principles. Implemented CRUD operations for multiple DAOs that tested on the SQL queries. Maven build automation tools were used to handle the project. Testing and debugging were performed on the IntelliJ IDEA.
+  -  Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage of memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git/Git Flow.
 
 
 ## Highlighted Projects
@@ -32,7 +32,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 ## Professional Experiences
 
-**Data Engineer Associate, Jarvis Consulting Group (2021 - present)**: Developed, tested, and maintained various software applications and architectures as Data Engineer. Improved experience with  Java, SQL, Linux, PostgreSQL,  Docker, and Maven by applying the Software Development Life Cycle principles. Used Git and Git Flow to manage the versions of each project effectively. Collaborated with developer team by an Agile/Scrum Framework. Attended daily scrum meetings and sprint retrospective meetings.
+**Data Engineer Associate, Jarvis Consulting Group (2021 - present)**: Developed, tested, and maintained various software applications and architectures as Data Engineer. Improved experience with Java, SQL, Linux, PostgreSQL, Docker,and Maven by applying the Software Development Life Cycle principles. Used Git and Git Flow to manage the versions of each project effectively. Collaborated with developer team by an Agile/Scrum Framework. Attended daily scrum meetings and sprint retrospective meetings. Along with this, improved aptitudes on working on real-world projects, prioritizing the work tasks, and organizing by applying analytical thinking principles.
 
 **Project Data and Method Engineer, Jantsa Wheel Industry (2016 - 2018)**: Analyzed product data to create a new system automation project associated with production requirements. Using Excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations. Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated. Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values were written as required. Productivity was increased by 20%.
 
@@ -43,7 +43,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 - Dean's List (Summer 2020): GPA : 4.0/4.0
 - GPA: 3.7/4.0 
 
-**Kutahya Dumlupinar University (2010-2014)**, Bachelor degree of Engineering, Industrial Engineering
+**Kutahya Dumlupinar University (2010-2014)**, Bachelor degree in Engineering, Industrial Engineering
 
 
 ## Miscellaneous
@@ -53,6 +53,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 - Data Visualization for Data Analysis (Linkedin Learning)
 - Organization helper member - Dundas West Festival (2018)
 - Reading Novel (Sci-Fi)
-- Yoga
 - Watching intellectual Youtube channels and TED Talks
-- Chess
+- Games: Chess, Table tennis
+- Yoga
