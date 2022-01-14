@@ -13,7 +13,7 @@
     },
     {
       "awards_achievements": null,
-      "degree": "Bachelor degree of Engineering",
+      "degree": "Bachelor degree in Engineering",
       "department": "Industrial Engineering",
       "duration": "2010-2014",
       "school_name": "Kutahya Dumlupinar University"
@@ -34,15 +34,15 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Designed a Linux cluster hardware monitoring agent to screen server host statistics and data usage. Implemented project using various technologies such as CentOS, Bash/Shell, Docker, RDBMS/SQL/PostgreSQL, Crontab, and Git/Git Flow. Bash commands were used to collect host utilization data, which was processed using Crontab. The monitoring agent servers will run within a CentOS 7 environment. The server will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database, which is deployed through  Docker. Completed implementation on the IntelliJ IDEA which is one of the integrated developer environments. Managed and deployed the project by using Git/Git Flow. ",
+      "description": "Designed a Linux cluster hardware monitoring agent to screen server host statistics and data usage. Implemented project using various technologies such as CentOS, Bash/Shell, Docker, RDBMS/SQL/PostgreSQL, Crontab, and Git/Git Flow. Bash commands were used to collect host utilization data, which was processed using Crontab. The monitoring agent servers will run within a CentOS 7 environment. The server will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database, which is deployed through Docker. Completed implementation on the IntelliJ IDEA which is one of the integrated developer environments. Managed and deployed the project by using Git/Git Flow.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
     {
       "description": [
         " Twitter App: Currently working on the project",
-        " JDBC App: Developed a Java Database Connection(JDBC) application that enables a connection between a Java program and a relational database management system (RDBMS).  Implementation was completed by using  Java 8, RDBMS(PostgreSQL), Maven, Docker, IntelliJ IDEA, and Git/Git Flow.  The application utilizes data access objects (DAOs) and Repository Architectural Patterns also certain advanced JDBC principles. Implemented CRUD operations for multiple DAOs that tested on the SQL queries. Maven build automation tools were used to handle the project. Testing and debugging were performed on the IntelliJ IDEA.",
-        " Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git /Git Flow."
+        " JDBC App: Developed a Java Database Connection(JDBC) application that enables a connection between a Java program and a relational database management system (RDBMS). Implementation was completed by using  Java 8, RDBMS(PostgreSQL), Maven, Docker, IntelliJ IDEA, and Git/Git Flow. The application utilizes data access objects(DAOs) and Repository Architectural Patterns also certain advanced JDBC principles. Implemented CRUD operations for multiple DAOs that tested on the SQL queries. Maven build automation tools were used to handle the project. Testing and debugging were performed on the IntelliJ IDEA.",
+        " Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage of memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git/Git Flow."
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
@@ -68,9 +68,9 @@
     {
       "bullets": [
         "Reading Novel (Sci-Fi)",
-        "Yoga",
         "Watching intellectual Youtube channels and TED Talks",
-        "Chess"
+        "Games: Chess, Table tennis",
+        "Yoga"
       ],
       "title": "Hobbies"
     }
@@ -78,7 +78,7 @@
   "professional_experience": [
     {
       "company": "Jarvis Consulting Group",
-      "description": "Developed, tested, and maintained various software applications and architectures as Data Engineer. Improved experience with  Java, SQL, Linux, PostgreSQL,  Docker, and Maven by applying the Software Development Life Cycle principles. Used Git and Git Flow to manage the versions of each project effectively. Collaborated with developer team by an Agile/Scrum Framework. Attended daily scrum meetings and sprint retrospective meetings.",
+      "description": "Developed, tested, and maintained various software applications and architectures as Data Engineer. Improved experience with Java, SQL, Linux, PostgreSQL, Docker,and Maven by applying the Software Development Life Cycle principles. Used Git and Git Flow to manage the versions of each project effectively. Collaborated with developer team by an Agile/Scrum Framework. Attended daily scrum meetings and sprint retrospective meetings. Along with this, improved aptitudes on working on real-world projects, prioritizing the work tasks, and organizing by applying analytical thinking principles.",
       "duration": "2021 - present",
       "title": "Data Engineer Associate"
     },
