@@ -19,5 +19,5 @@ public class TwitterHttpHelper  implements HttpHelper{
 
         httpClient =new DefaultHttpClient();
     }
-  
+
 }
