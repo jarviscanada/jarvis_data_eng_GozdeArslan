@@ -22,7 +22,7 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan",
   "highlighted_projects": [
     {
-      "description": "Designed a movie streaming website with features such as movie listings, searching, registration and sign-in, and purchase. The project involves Back-End and Front-End applications. Multiple technologies are used when implementing that are JavaScript, Node.js, Express-Handlebars, CSS, Visual Studio Code, MongoDB, and Heroku. The application uses the MVC(model-view-controller) design pattern that specifies an application consists of a data model, presentation information, and control information. Node.js and express libraries are used to handle the Back-End applications. CSS is used to govern the front-end design. Database managed utilized on MongoDB. Application deployed through Heroku by using GitHub connection.",
+      "description": "Designed a movie streaming website with features such as movie listings, searching, registration and sign-in, and purchase. Implemented the application using JavaScript, Node.js, Express-Handlebars, CSS, Visual Studio Code, MongoDB, and Heroku. The application uses the MVC(model-view-controller) design pattern that specifies an application consists of a data model, presentation information, and control information. Node.js and express libraries are used to handle the Back-End applications. CSS is used to govern the front-end design. Database managed utilized on MongoDB. Application deployed through Heroku by using GitHub connection.",
       "git_url": "https://github.com/gzarslan/A-movie-website",
       "name": "Web App for Movie Streaming"
     },
@@ -78,7 +78,7 @@
   "professional_experience": [
     {
       "company": "Jarvis Consulting Group",
-      "description": "Developed, tested, and maintained various software applications and architectures as Data Engineer. Improved experience with Java, SQL, Linux, PostgreSQL, Docker,and Maven by applying the Software Development Life Cycle principles. Used Git and Git Flow to manage the versions of each project effectively. Collaborated with developer team by an Agile/Scrum Framework. Attended daily scrum meetings and sprint retrospective meetings. Along with this, improved aptitudes on working on real-world projects, prioritizing the work tasks, and organizing by applying analytical thinking principles.",
+      "description": "Develop, test, and maintain various software applications and architectures as Data Engineer. Improve experience with Java, SQL, Linux, PostgreSQL, Docker, and Maven by applying the SDLC best practices. Use Git and Git Flow to manage the versions of each project effectively. Collaborate with developer team by an Agile/Scrum Framework. Organize daily scrum meetings and sprint retrospective meetings. Along with this, I am improving my aptitudes on working on real-world projects, prioritizing the work tasks, and organizing by applying analytical thinking principles.",
       "duration": "2021 - present",
       "title": "Data Engineer Associate"
     },
@@ -91,11 +91,10 @@
   ],
   "skills": {
     "competent": [
-      "C/C++",
       "Java",
+      "C/C++",
       "HTML",
-      "ERD",
-      "Ms Office",
+      "Docker",
       "MongoDB"
     ],
     "familiar": [
