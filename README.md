@@ -6,7 +6,7 @@ After working on several engineering projects that incorporated data-driven soft
 
 **Proficient:** Linux/Bash, RDBMS/SQL, PL/SQL, Agile/Scrum, Git/Git Flow
 
-**Competent:** C/C++, Java, HTML, ERD, Ms Office, MongoDB
+**Competent:** Java, C/C++, HTML, Docker, MongoDB
 
 **Familiar:** Python, R, Spark, Power BI, Java Script, Statistics
 
@@ -25,14 +25,14 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 
 ## Highlighted Projects
-**Web App for Movie Streaming** [[GitHub](https://github.com/gzarslan/A-movie-website)]: Designed a movie streaming website with features such as movie listings, searching, registration and sign-in, and purchase. The project involves Back-End and Front-End applications. Multiple technologies are used when implementing that are JavaScript, Node.js, Express-Handlebars, CSS, Visual Studio Code, MongoDB, and Heroku. The application uses the MVC(model-view-controller) design pattern that specifies an application consists of a data model, presentation information, and control information. Node.js and express libraries are used to handle the Back-End applications. CSS is used to govern the front-end design. Database managed utilized on MongoDB. Application deployed through Heroku by using GitHub connection.
+**Web App for Movie Streaming** [[GitHub](https://github.com/gzarslan/A-movie-website)]: Designed a movie streaming website with features such as movie listings, searching, registration and sign-in, and purchase. Implemented the application using JavaScript, Node.js, Express-Handlebars, CSS, Visual Studio Code, MongoDB, and Heroku. The application uses the MVC(model-view-controller) design pattern that specifies an application consists of a data model, presentation information, and control information. Node.js and express libraries are used to handle the Back-End applications. CSS is used to govern the front-end design. Database managed utilized on MongoDB. Application deployed through Heroku by using GitHub connection.
 
 **A Retail Application** [[GitHub](https://github.com/gzarslan/Database-3/tree/main/assignment2)]: Implemented a retail application that allows a user to add products to a cart for a specific consumer and estimates the overall cost of all the items. The order information is stored in the Oracle database after checkout. The project was developed by using the Oracle, PL/SQL, and C++ programming languages.
 
 
 ## Professional Experiences
 
-**Data Engineer Associate, Jarvis Consulting Group (2021 - present)**: Developed, tested, and maintained various software applications and architectures as Data Engineer. Improved experience with Java, SQL, Linux, PostgreSQL, Docker,and Maven by applying the Software Development Life Cycle principles. Used Git and Git Flow to manage the versions of each project effectively. Collaborated with developer team by an Agile/Scrum Framework. Attended daily scrum meetings and sprint retrospective meetings. Along with this, improved aptitudes on working on real-world projects, prioritizing the work tasks, and organizing by applying analytical thinking principles.
+**Data Engineer Associate, Jarvis Consulting Group (2021 - present)**: Develop, test, and maintain various software applications and architectures as Data Engineer. Improve experience with Java, SQL, Linux, PostgreSQL, Docker, and Maven by applying the SDLC best practices. Use Git and Git Flow to manage the versions of each project effectively. Collaborate with developer team by an Agile/Scrum Framework. Organize daily scrum meetings and sprint retrospective meetings. Along with this, I am improving my aptitudes on working on real-world projects, prioritizing the work tasks, and organizing by applying analytical thinking principles.
 
 **Project Data and Method Engineer, Jantsa Wheel Industry (2016 - 2018)**: Analyzed product data to create a new system automation project associated with production requirements. Using Excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations. Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated. Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values were written as required. Productivity was increased by 20%.
 
