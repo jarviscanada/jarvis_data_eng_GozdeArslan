@@ -44,27 +44,17 @@ public class TwitterDao implements CrdDao<Tweet, String> {
     }
 
     @Override
-    public Tweet create(Tweet entity) {
+    public Tweet create(Tweet entity) throws URISyntaxException, UnsupportedEncodingException {
         URI uri ;
-        try{
-
-            uri= getPostUri(entity);
-
-
-        } catch(URISyntaxException | UnsupportedEncodingException e){
-
-            throw  new IllegalArgumentException("Invalid tweet input",e);
-
-        }
+        uri= getPostUri(entity);
         //Execute Http Request
-
         HttpResponse response =httpHelper.httpPost(uri);
         return parseResponseBody(response,HTTP_OK);
     }
 
     private URI getPostUri(Tweet entity) throws URISyntaxException {
 
-        URI u = new URI(entity).parseServerAuthority();
+        URI u = new URI(u).parseServerAuthority();
         return null;
     }
 
