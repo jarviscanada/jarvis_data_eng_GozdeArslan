@@ -1,5 +1,9 @@
 package ca.jrvs.practice.dataStructure;
 
+
+/**
+ *
+ */
 public class TwoSum {
     private static int[] findTwoSum(int[] numbers, int target) {
 

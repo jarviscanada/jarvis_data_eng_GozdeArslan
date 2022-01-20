@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bcd8616-4bae-43aa-80b0-3540d9f6ba7b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../core_java/twitter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../core_java/twitter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../core_java/twitter/src/main/java/ca/jrvs/apps/twitter/example/TwitterApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../core_java/twitter/src/main/java/ca/jrvs/apps/twitter/example/TwitterApiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ca/jrvs/practice/dataStructure/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ca/jrvs/practice/dataStructure/TwoSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
