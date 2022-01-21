@@ -21,5 +21,5 @@ public interface HttpHelper {
      * @return
      */
 
-    HttpResponse httpGet(URI uri);
+     HttpResponse httpGet(URI uri);
 }
