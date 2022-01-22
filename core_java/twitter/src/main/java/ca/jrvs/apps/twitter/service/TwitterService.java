@@ -15,9 +15,9 @@ public class TwitterService implements Service {
     private CrdDao cDao;
     /**
      * Constructor
+     * @param cDao
      */
-    public TwitterService() {
-    }
+    public TwitterService(CrdDao cDao) { this.cDao = cDao; }
 
     /**
      * Validate and post a user input Tweet
@@ -28,7 +28,7 @@ public class TwitterService implements Service {
      */
     @Override
     public Tweet postTweet(Tweet tweet) throws UnsupportedEncodingException, URISyntaxException {
-
+        validatePostTweet(tweet);
         return (Tweet) cDao.create(tweet);
     }
 
@@ -42,9 +42,7 @@ public class TwitterService implements Service {
      */
     @Override
     public Tweet showTweet(String id, String[] fields) {
-      /*  Status tweetById = twitter.showStatus(cDao.findById(id));
-        String url= "https://twitter.com/" + tweetById.getUser().getHashtag()
-                + "/status/" + tweetById.getId();*/
+        validateId(id);
         return (Tweet) cDao.findById(id);
 
     }
@@ -61,6 +59,39 @@ public class TwitterService implements Service {
 
           List<Tweet> listOfTweets = new ArrayList<Tweet>();
         return (List<Tweet>) cDao.deleteById(listOfTweets);
+        /*  Arrays.stream(ids).forEach(this::validateId);
+            Arrays.stream(ids).forEach(id -> existingTweets.add((Tweet) dao.deleteById(id)));*/
 
+    }
+
+    private void validatePostTweet(Tweet tweet) {
+
+        final Integer maxTextBody = 140;
+        final Integer minGeoAddress = -90;
+        final Integer maxGeoAddress = 90;
+        String textBody = tweet.getText();
+        Double longitude = tweet.getCoordinates().getCoordinates().get(0);
+        Double latitude = tweet.getCoordinates().getCoordinates().get(1);
+
+        if (textBody.length() > maxTextBody) {
+
+            throw new IllegalArgumentException(
+                    "max tweet range is 140 characters");
+        } else if (longitude > maxGeoAddress || longitude < minGeoAddress) {
+
+
+        } else if (latitude > maxGeoAddress || latitude < minGeoAddress) {
+
+        }
+    }
+
+    private void validateId(String id) {
+        try {
+            Long.parseLong(id);
+        } catch (NumberFormatException ex) {
+
+            throw new IllegalArgumentException(
+                    "iFailed!: incorrect tweet id");
+        }
     }
 }

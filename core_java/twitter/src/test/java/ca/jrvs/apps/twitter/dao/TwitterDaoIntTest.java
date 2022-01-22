@@ -3,8 +3,13 @@ package ca.jrvs.apps.twitter.dao;
 import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper;
 import ca.jrvs.apps.twitter.model.Tweet;
+import ca.jrvs.apps.twitter.util.JsonUtil;
+import ca.jrvs.apps.twitter.util.TweetUtil;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URISyntaxException;
 
 import static org.junit.Assert.*;
 
@@ -22,23 +27,31 @@ public class TwitterDaoIntTest {
                 TOKEN_SECRET);
         this.twitterDao = new TwitterDao(httpHelper);
     }
-  @Test
-    public void create() throws Exception {
-        String hashTag = "abc";
-        String text = "Example of twitter data object " +hashTag + " "+System.currentTimeMillis();
+
+    /**
+     *
+     * @throws UnsupportedEncodingException
+     * @throws URISyntaxException
+     */
+    @Test
+    public void create() throws UnsupportedEncodingException, URISyntaxException {
+
+        String hashtag = "#Testing";
+        String text = "TwitterDaoIntTest" + hashtag + " " + System.currentTimeMillis();
         Double lat = 1d;
         Double lon = -1d;
-        Tweet post = TweetUtil.buildTweet(text, lon, lat);
-        System.out.println(Jsonutil.toPrettyJson (post));
-        Tweet tweet = twitterDao.create(post);
-        assertEquals(text, tweet.getText());
-        assertNotNull(tweet.getCoordinates());
-        assertEquals( 2, tweet.getCoordinates().getCoordinates().size());
-        assertEquals(lon, tweet.getCoordinates().getCoordinates().get(0));
-        assertEquals(lat, tweet.getCoordinates().getCoordinates().get(1));
-        assertTrue (hashTag.contains (tweet.getEntities().getHashtag().get(0).getText()));
+        Tweet tweet = TweetUtil.buildTweet(text, lat, lon);
 
+        Tweet postedTweet = twitterDao.create(tweet);
+
+        assertEquals(text, postedTweet.getText());
+        assertNotNull(postedTweet.getCoordinates());
+        assertEquals(2, postedTweet.getCoordinates().getCoordinates().size());
+        assertEquals(lon, postedTweet.getCoordinates().getCoordinates().get(0));
+        assertEquals(lat, postedTweet.getCoordinates().getCoordinates().get(1));
+        assertTrue(hashtag.contains(postedTweet.getEntities().getHashtag().get(0).getText()));
     }
+
     @Test
     public void findById() {
         String id = "1483988202369204224";

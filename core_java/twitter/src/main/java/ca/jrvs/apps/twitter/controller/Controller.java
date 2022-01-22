@@ -1,6 +1,9 @@
 package ca.jrvs.apps.twitter.controller;
 
 import ca.jrvs.apps.twitter.model.Tweet;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 public interface Controller {
@@ -12,7 +15,7 @@ public interface Controller {
      * @return a posted tweet
      * @throws IllegalArgumentException if args are invalid
      */
-    Tweet postTweet(String[] args);
+    Tweet postTweet(String[] args) throws UnsupportedEncodingException, URISyntaxException;
 
     /**
      * Parse user argument and search a tweet by calling service classes
