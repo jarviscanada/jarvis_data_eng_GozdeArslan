@@ -41,7 +41,7 @@ Application Run with additional JVM options
 ``` java -Xms5m -Xmx5m \-cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [regex] [rootDirectory] [outfile] ```
 
 
-# Implemenation
+# Implementation
 
 
 Java Grep Application
@@ -68,9 +68,6 @@ Java Grep Application
 
 
 
-## Performance Issue
-
-Discuss the memory issue and how would you fix it
 
 # Test
 
