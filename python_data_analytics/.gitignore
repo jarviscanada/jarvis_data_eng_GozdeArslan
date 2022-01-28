@@ -1,5 +1,4 @@
-./
-*.config
-*.jupyter
-*.local
-*.npm
+/.config
+/.jupyter
+/.local
+/.npm
