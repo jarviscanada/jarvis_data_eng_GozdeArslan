@@ -1,10 +1,6 @@
-.bash_history
 .config
 .jupyter
 .local
 .local_env
 .npm
-__pycache__
-.ipynb_checkpoints
-.ipython/
-.cache/
+
