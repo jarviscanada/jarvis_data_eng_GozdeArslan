@@ -1,7 +1,6 @@
 
 # Introduction
-The Project design of application to search matching strings within the files by using grep commands.The grep commands will be able to read and write the files
-in the file directory.Searching the patterns that is done by regular expressions write the results to an output file in the root directory.
+The Project design of the application to search matching strings within the files by using grep commands. The grep commands will be able to read and write the files in the file directory. Searching the patterns that are done by regular expressions write the results to an output file in the root directory.
 
 - Technologies used in this project ;
 
@@ -71,12 +70,12 @@ Java Grep Application
 
 # Test
 
-To test application ,There is an instance file that includes lines of text (Shakespeare.txt).The application reads the lines by using java grep method called readLines. Along with this ,The instance output file used to write out results in to Output file includes matched lines by using application methods.
+To test the application, There is an instance file that includes lines of text (Shakespeare.txt). The application reads the lines by using the java grep method called readLines. Along with this, The instance output file used to write out results into the output file includes matched lines by using application methods.
 
 
 # Deployment
 
-Application Dockerized by using Docker image. Creting docker file allows us to carry openjdk:8-alpine configurations that will copy from JAR file and creates entry point configurations.
+Application Dockerized by using Docker image. Creating a Docker file allows us to carry openjdk:8-alpine configurations that will copy from the JAR file and create entry point configurations.
 
 
 # Improvement
@@ -86,6 +85,11 @@ Application Dockerized by using Docker image. Creting docker file allows us to c
 2-Use more and proper lambda implementation.
 
 3-Flexible search methods can implement such as searching and replacing patterns.
+
+1-Use Java Stream APIs in the implementation rather than using java List.
+
+2-Use more and proper Lambda implementation.
+
 
 
 

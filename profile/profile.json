@@ -1,0 +1,133 @@
+{
+  "education": [
+    {
+      "awards_achievements": [
+        "Scholarship",
+        "Dean's List (Summer 2020): GPA : 4.0/4.0",
+        "GPA: 3.7/4.0 "
+      ],
+      "degree": "Diploma of Applied Sciences",
+      "department": "Computer Programming",
+      "duration": "2020-2021",
+      "school_name": "Seneca College"
+    },
+    {
+      "awards_achievements": [
+        "Scholarship",
+        "Dean's List (Summer 2020): GPA : 4.0/4.0",
+        "GPA: 3.7/4.0 "
+      ],
+      "degree": "Bachelor degree of Engineering",
+      "department": "Industrial Engineering",
+      "duration": "2010-2014",
+      "school_name": "Kutahya Dumlupinar University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan",
+  "highlighted_projects": [
+    {
+      "description": "Designed movie streaming website in building Dynamic websites and Server-Side Web applications using Node.js and Express.",
+      "git_url": "https://github.com/gzarslan/A-movie-website",
+      "name": "Web app for Movie Streaming"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Provided  solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems ",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        " Twitter App: Currenlty working on app",
+        " JDBC App: Implemented java database connection application enables a connection between a Java program and a relational database management system (RDBMS).It uses DAO and Repository architectural patterns, as well as certain advanced JDBC principles.",
+        " Grep App: created application to search matching strings within the files by using grep commands.The grep commands will be able to read and write the files in the file directory.Searching the patterns that is done by regular expressions write the results to an output file in the root directory."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Gozde Arslan",
+  "others": [
+    {
+      "bullets": [
+        "Problem Solving Techniques (2017)",
+        "Team- work training (2017)"
+      ],
+      "title": "Certificates"
+    },
+    {
+      "bullets": [
+        "Reading",
+        "yoga",
+        "chess"
+      ],
+      "title": "Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis Consulting Group",
+      "description": "Used Linux, Java, Docker, and Postgres, designed, created, and tested several software applications. Used Agile Methodologies to collaborate with my team.",
+      "duration": "2021 - present",
+      "title": "Data Engineer Associate"
+    },
+    {
+      "company": "Jantsa Wheel Industry",
+      "description": "Analyzed product data to create a new system automation project associated with productionrequirements. Using excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations.Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated.Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values was written as required. Productivity was increased by 20%.",
+      "duration": "2016 - 2018",
+      "title": "Project Data and Method Engineer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "C/C++",
+      "Java",
+      "HTML",
+      "ERD",
+      "Ms Office",
+      "MongoDB"
+    ],
+    "familiar": [
+      "Python",
+      "R",
+      "Spark",
+      "Power BI",
+      "Java Script",
+      "Statistics"
+    ],
+    "proficient": [
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "PL/SQL",
+      "Agile/Scrum",
+      "Git"
+    ]
+  },
+  "summary": "After working on several engineering projects that incorporated data-driven software tools, I determined to sharpen my software abilities to put my passion for the software and data industries to effective use. Along with this, I am a recent Seneca College Computer Science graduate. Throughout my studies, I have worked on a variety of research projects in object-oriented programming, database management, and web development. Involved in and handled many team initiatives that aided in the development of various teamwork roles and leadership skills. Working as a data engineer or analyst position piqued my interest. I'm presently employed as a data engineer associate at the Jarvis Consulting Group, where I develop software applications using Linux and Java tools while adhering to the Agile approach."
+}
