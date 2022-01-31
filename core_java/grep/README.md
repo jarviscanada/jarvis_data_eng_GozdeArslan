@@ -40,7 +40,7 @@ Application Run with additional JVM options
 ``` java -Xms5m -Xmx5m \-cp target/grep-1.0-SNAPSHOT.jar ca.jrvs.apps.grep.JavaGrepImp [regex] [rootDirectory] [outfile] ```
 
 
-# Implemenation
+# Implementation
 
 
 Java Grep Application
@@ -67,9 +67,6 @@ Java Grep Application
 
 
 
-## Performance Issue
-
-Discuss the memory issue and how would you fix it
 
 # Test
 
@@ -83,9 +80,16 @@ Application Dockerized by using Docker image. Creating a Docker file allows us t
 
 # Improvement
 
+1-Use Java Stream APIs in the implementation rather than using java collections for more efficient memory management.
+
+2-Use more and proper lambda implementation.
+
+3-Flexible search methods can implement such as searching and replacing patterns.
+
 1-Use Java Stream APIs in the implementation rather than using java List.
 
 2-Use more and proper Lambda implementation.
+
 
 
 
