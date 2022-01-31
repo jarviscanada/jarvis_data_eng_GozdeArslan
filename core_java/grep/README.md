@@ -86,10 +86,4 @@ Application Dockerized by using Docker image. Creating a Docker file allows us t
 
 3-Flexible search methods can implement such as searching and replacing patterns.
 
-1-Use Java Stream APIs in the implementation rather than using java List.
-
-2-Use more and proper Lambda implementation.
-
-
-
 
