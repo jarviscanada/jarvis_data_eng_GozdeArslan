@@ -80,7 +80,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
      * @param httpOkCode
      * @return
      */
-    private Tweet parseResponseBody(HttpResponse response, int httpOkCode) {
+    protected Tweet parseResponseBody(HttpResponse response, int httpOkCode) {
 
         Tweet twt =null;
 
@@ -172,7 +172,7 @@ public class TwitterDao implements CrdDao<Tweet, String> {
 
         }catch (URISyntaxException e){
 
-            throw new IllegalArgumentException("Failed! Please enter valid id data! ",e);
+            throw new IllegalArgumentException("Failed! Please enter valid data id! ",e);
 
 
         }

@@ -54,13 +54,13 @@ public class TwitterDaoIntTest {
 
     @Test
     public void findById() {
-        String id = "1483988202369204224";
-        twitterDao.findById(id);
+        String JsonStrId = "1483988202369204224";
+        twitterDao.findById(JsonStrId);
     }
 
     @Test
     public void deleteById() {
-        String id = "1483988202369204224";
-         twitterDao.deleteById(id);
+        String JsonStrId = "1483988202369204224";
+         twitterDao.deleteById(JsonStrId);
     }
 }

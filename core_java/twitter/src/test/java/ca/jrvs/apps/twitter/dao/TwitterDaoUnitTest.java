@@ -11,8 +11,10 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import java.io.IOException;
+
 import static org.junit.Assert.*;
-import static org.mockito.ArgumentMatchers.isNotNull;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.when;
 
@@ -56,11 +58,90 @@ public class TwitterDaoUnitTest {
                 + "}";
         when(mockHelper.httpPost(isNotNull())).thenReturn(null);
         TwitterDao spyDao = Mockito.spy(dao);
-        Tweet create = JsonParser.toObjectFromJson(tweetJsonStr, Tweet.class);
+        Tweet createdTweet = JsonParser.toObjectFromJson(tweetJsonStr, Tweet.class);
         //mock parseResponseBody
-        doReturn(create).when(spyDao).parseResponseBody(any());
-        Tweet tweet = spyDao.create(TweetUtil.create(text, lon, lat));
+        doReturn(createdTweet).when(spyDao).parseResponseBody(any(),anyInt());
+        Tweet tweet = spyDao.create(TweetUtil.buildTweet(text,lon,lat));
         assertNotNull(tweet);
         assertNotNull(tweet.getText());
     }
+
+    @Test
+    public void deleteTweet() throws IOException {
+        String JsonStrId = "1097607853932564480";
+        String JsonStr= "{\n"
+                + "   \"created_at\":\"Mon Feb 18 21:24:39 +0000 2019\",\n"
+                + "   \"id\":1097607853932564480,\n"
+                + "   \"id_str\":\"1097607853932564480\",\n"
+                + "   \"text\":\"test with loc223\",\n"
+                + "   \"entities\":{\n"
+                + "      \"hashtags\":[],\n"
+                + "      \"user_mentions\":[]\n"
+                + "   },\n"
+                + "   \"coordinates\":null,\n"
+                + "   \"retweet_count\":0,\n"
+                + "   \"favorite_count\":0,\n"
+                + "   \"favorited\":false,\n"
+                + "   \"retweeted\":false\n"
+                + "}";
+
+
+
+        when(mockHelper.httpPost(isNotNull())).thenReturn(notNull());
+        try {
+            dao.deleteById(JsonStrId);
+            fail();
+        } catch (RuntimeException e) {
+            assertTrue(true);
+        }
+
+        //When test successfully request
+        when(mockHelper.httpPost(isNotNull())).thenReturn(null);
+        TwitterDao spyDao = Mockito.spy(dao);
+        Tweet createdTweet = JsonParser.toObjectFromJson(JsonStr, Tweet.class);
+        //mock parseResponseBody
+        doReturn(createdTweet).when(spyDao).parseResponseBody(any(), anyInt());
+        Tweet tweet = spyDao.deleteById(JsonStrId);
+        assertNotNull(tweet);
+        assertNotNull(tweet.getText());
+    }
+    @Test
+    public void findById() throws IOException {
+        String JsonStr = "{\n"
+                + "   \"created_at\":\"Mon Feb 18 21:24:39 +0000 2019\",\n"
+                + "   \"id\":1097607853932564480,\n"
+                + "   \"id_str\":\"1097607853932564480\",\n"
+                + "   \"text\":\"test with loc223\",\n"
+                + "   \"entities\":{\n"
+                + "      \"hashtags\":[],\n"
+                + "      \"user_mentions\":[]\n"
+                + "   },\n"
+                + "   \"coordinates\":null,\n"
+                + "   \"retweet_count\":0,\n"
+                + "   \"favorite_count\":0,\n"
+                + "   \"favorited\":false,\n"
+                + "   \"retweeted\":false\n"
+                + "}";
+        String JsonStrId = "1097607853932564480";
+
+
+        when(mockHelper.httpPost(isNotNull())).thenReturn(notNull());
+        try {
+            dao.findById(JsonStrId);
+            fail();
+        } catch (RuntimeException e) {
+            assertTrue(true);
+        }
+
+        //When test successfully request
+        when(mockHelper.httpPost(isNotNull())).thenReturn(null);
+        TwitterDao spyDao = Mockito.spy(dao);
+        Tweet createdTweet = JsonParser.toObjectFromJson(JsonStr, Tweet.class);
+        //mock parseResponseBody
+        doReturn(createdTweet).when(spyDao).parseResponseBody(any(), anyInt());
+        Tweet tweet = spyDao.findById(JsonStrId);
+        assertNotNull(tweet);
+        assertNotNull(tweet.getText());
+    }
+
 }

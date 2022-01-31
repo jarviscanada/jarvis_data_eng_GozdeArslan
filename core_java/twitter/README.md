@@ -105,7 +105,7 @@ Application Dockerized by using Docker image. Creating docker file allows us to 
 
 1-Add more method to pull tweets between given dates.
 2-Cam improve to part that will allow us to comment under our tweet.
-3.Allow to post a picture rather than text.
+3.Implement more functionality to post such as picture.
 
 
 

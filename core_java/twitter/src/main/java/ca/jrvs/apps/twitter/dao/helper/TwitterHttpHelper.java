@@ -30,7 +30,7 @@ public class TwitterHttpHelper implements HttpHelper {
 
     public TwitterHttpHelper(String consumerKey, String consumerSecret, String accessToken, String tokenSecret) {
 
-        //Setup Auth
+        //Setup Authentication
         consumer = new CommonsHttpOAuthConsumer(consumerKey, consumerSecret);
         consumer.setTokenWithSecret(accessToken, tokenSecret);
         httpClient = HttpClientBuilder.create().build();
