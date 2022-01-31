@@ -85,5 +85,3 @@ Application Dockerized by using Docker image. Creating a Docker file allows us t
 2-Use more and proper lambda implementation.
 
 3-Flexible search methods can implement such as searching and replacing patterns.
-
-
