@@ -81,9 +81,11 @@ Application Dockerized by using Docker image. Creting docker file allows us to c
 
 # Improvement
 
-1-Use Java Stream APIs in the implementation rather than using java.util.List;
+1-Use Java Stream APIs in the implementation rather than using java collections for more efficient memory management.
 
-2- Use more and proper lambda implementation.
+2-Use more and proper lambda implementation.
+
+3-Flexible search methods can implement such as searching and replacing patterns.
 
 
 
