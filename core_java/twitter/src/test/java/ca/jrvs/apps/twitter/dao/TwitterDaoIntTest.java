@@ -36,7 +36,7 @@ public class TwitterDaoIntTest {
     @Test
     public void create() throws UnsupportedEncodingException, URISyntaxException {
 
-        String hashtag = "#Testing";
+        String hashtag = "#Testing Twitter DAO";
         String text = "TwitterDaoIntTest" + hashtag + " " + System.currentTimeMillis();
         Double lat = 1d;
         Double lon = -1d;

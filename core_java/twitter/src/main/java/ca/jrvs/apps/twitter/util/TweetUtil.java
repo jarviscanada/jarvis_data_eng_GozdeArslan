@@ -5,8 +5,12 @@ package ca.jrvs.apps.twitter.util;
 import ca.jrvs.apps.twitter.model.Coordinates;
 import ca.jrvs.apps.twitter.model.Tweet;
 import com.google.gdata.util.common.base.PercentEscaper;
+import com.sun.org.slf4j.internal.Logger;
+import com.sun.org.slf4j.internal.LoggerFactory;
 
-    public class TweetUtil {
+import java.util.Arrays;
+
+public class TweetUtil {
 
         public static Tweet buildTweet(String text, Double longt, Double lat) {
             Tweet tweet = new Tweet();
@@ -20,28 +24,26 @@ import com.google.gdata.util.common.base.PercentEscaper;
             return tweet;
         }
 
-    }
 
+        public static Tweet createTweet(String text,
+                                        double longitude,
+                                        double latitude) {
 
-    /*
-    public static Tweet createTweet(String text,
-                                    double longitude,
-                                    double latitude) {
+            final Logger logger = LoggerFactory.getLogger(TweetUtil.class);
 
-        final Logger logger = LoggerFactory.getLogger(TweetUtil.class);
+            Coordinates geoCoordinates = new Coordinates();
+            Tweet tweet = new Tweet();
 
-        Coordinates geoCoordinates = new Coordinates();
-        Tweet tweet = new Tweet();
+            try {
+                geoCoordinates.setCoordinates(Arrays.asList(longitude, latitude));
+                geoCoordinates.setType("Point");
+                tweet.setText(text);
+                tweet.setCoordinates(geoCoordinates);
+            } catch (Exception ex) {
 
-        try {
-            geoCoordinates.setCoordinates(Arrays.asList(longitude, latitude));
-            geoCoordinates.setType("Point");
-            tweet.setText(text);
-            tweet.setCoordinates(geoCoordinates);
-        } catch (Exception ex) {
-            logger.info("failed to create tweet from TweetUtil");
-            logger.error(ex.getMessage());
+                logger.error(ex.getMessage());
+            }
+            return tweet;
         }
-        return tweet;
-    }*/
 
+    }
