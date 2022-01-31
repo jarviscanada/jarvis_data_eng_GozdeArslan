@@ -11,6 +11,7 @@ import org.junit.Test;
 import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -41,7 +42,7 @@ public class TwitterServiceIntTest {
         Coordinates coordinates = new Coordinates();
               Double[] coordinateOfTweet = new Double[] {50d, -50d};
 
-        coordinates.setCoordinates(coordinateOfTweet);
+        coordinates.setCoordinates(Arrays.asList(coordinateOfTweet));
         tweet.setCoordinates(coordinates);
         tweet.setText("Twitter App/ service  integration test");
 
