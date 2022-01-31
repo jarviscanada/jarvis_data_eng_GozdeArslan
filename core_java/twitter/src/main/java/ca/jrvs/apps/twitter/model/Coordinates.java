@@ -28,9 +28,7 @@ public class Coordinates {
         return coordinates;
     }
     @JsonProperty("coordinates")
-    public void setCoordinates (Double[] coordinates) {
-        this.coordinates = Arrays.asList(coordinates);
-    }
+    public void setCoordinates (List<Double> coordinates) {this.coordinates = coordinates;  }
 
 
 }

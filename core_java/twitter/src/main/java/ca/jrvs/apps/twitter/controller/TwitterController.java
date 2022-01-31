@@ -59,18 +59,14 @@ public class TwitterController implements Controller{
      */
     @Override
     public Tweet showTweet(String[] args) {
-        if (args.length < 2 || args.length > 3) {
+        if (args.length !=2) {
             throw new IllegalArgumentException(
-                    "Too few or too many arguments. \nUSAGE: TwitterCLIApp show \"tweet_id\" \"[field1, field2]]\"");
+                    "Error! Number of Arguments does not match. \nUSAGE: TwitterCLIApp show \"tweet_id\" \"[field1, field2]]\"");
         }
-        String id = args[1];
-        String[] tweetFields = null;
-        if (args.length == 3) {
-            String fields = args[2];
-            tweetFields = fields.split(COMMA);
-            return service.showTweet(id, tweetFields);
-        }
-        return service.showTweet(id, null);
+        String[] ids = args[2].split(COMMA);
+        return service.showTweet(ids[1], null);
+
+
     }
 
     /**
@@ -84,11 +80,9 @@ public class TwitterController implements Controller{
     public List<Tweet> deleteTweet(String[] args) {
         if (args.length != 2) {
             throw new IllegalArgumentException(
-                    "Invalid number of arguments. USAGE: TwitterCLIApp delete \"[id1,id2,..]\" ");
+                    "Error! Number of Arguments does not match. USAGE: TwitterCLIApp delete \"[id1,id2,..]\" ");
         }
-        String ids = args[1];
-        String[] splitIds = ids.split(COMMA);
-
-        return service.deleteTweets(splitIds);
+        String[] ids = args[2].split(COMMA);
+        return service.deleteTweets(ids);
     }
 }

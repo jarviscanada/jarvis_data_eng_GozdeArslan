@@ -1,24 +1,26 @@
-package ca.jrvs.apps.twitter.service;
+package ca.jrvs.apps.twitter.controller;
 
+import ca.jrvs.apps.twitter.dao.CrdDao;
 import ca.jrvs.apps.twitter.dao.TwitterDao;
 import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper;
-import ca.jrvs.apps.twitter.model.Coordinates;
 import ca.jrvs.apps.twitter.model.Tweet;
+import ca.jrvs.apps.twitter.service.Service;
+import ca.jrvs.apps.twitter.service.TwitterService;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class TwitterServiceIntTest {
+public class TwitterControllerIntTest {
+    private TwitterController controller;
+    private Service service;
+    private CrdDao twitterDao;
 
-    private TwitterDao twitterDao;
-    private TwitterService twitterService;
     @Before
     public void setUp() throws Exception {
 
@@ -29,24 +31,13 @@ public class TwitterServiceIntTest {
         System.out.println(CONSUMER_KEY + "||" + CONSUMER_SECRET + "||" + ACCESS_TOKEN + "||" + TOKEN_SECRET);
         HttpHelper httpHelper = new TwitterHttpHelper(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN,
                 TOKEN_SECRET);
-
-        //pass dependency
         this.twitterDao = new TwitterDao(httpHelper);
-       this.twitterService= new TwitterService(twitterDao);
-
     }
     @Test
     public void postTweet() {
-        Tweet tweet = new Tweet();
-        Coordinates coordinates = new Coordinates();
-              Double[] coordinateOfTweet = new Double[] {50d, -50d};
-
-        coordinates.setCoordinates(coordinateOfTweet);
-        tweet.setCoordinates(coordinates);
-        tweet.setText("Twitter App/ service  integration test");
-
+        String[] args = {"post", "TwitterController integration test", "45:-45"};
         try {
-            Tweet tweetPost = twitterService.postTweet(tweet);
+            Tweet tweet = controller.postTweet(args);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (URISyntaxException e) {
@@ -55,14 +46,15 @@ public class TwitterServiceIntTest {
     }
 
     @Test
-    public void showTweet() {
-        String id = " 1483988202369204224";
-        Tweet tweet = twitterService.showTweet(id, null);
+    public void showTweet() throws UnsupportedEncodingException, URISyntaxException {
+        String[] ids = {"show", "1470473033458622466"};
+        Tweet tweet = controller.postTweet(ids);
     }
 
     @Test
-    public void deleteTweets() {
-        String [] ids = new String[] { " 1483988202369204224", "1468763845028102148" };
-        List<Tweet> tweets = twitterService.deleteTweets(ids);
+    public void deleteTweet() {
+        String[] ids = {"delete", "1470473033458622466, 1470427538807836678"};
+        List<Tweet> tweets = controller.deleteTweet(ids);
     }
+
 }
