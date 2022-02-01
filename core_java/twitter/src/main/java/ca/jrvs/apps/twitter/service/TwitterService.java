@@ -88,7 +88,7 @@ public class TwitterService implements Service {
         } catch (NumberFormatException ex) {
 
             throw new IllegalArgumentException(
-                    "iFailed!: incorrect tweet id");
+                    "Failed!: incorrect tweet id");
         }
     }
 }
