@@ -8,7 +8,7 @@ The Twitter CRUD application allows the user to post , view, and delete tweets. 
     - JAVA (stream APIs,Collections)
   
     - Junit - Mockito
-  
+    
     - SpringBoot
   
     - Docker(To run app within container)
@@ -56,23 +56,27 @@ To package app using Docker:
 Java Twitter CRUD Application
 The application implemented by using MVC design. it represents multiple layers that are Controller ,Service ,DAO(Data Access Object) layer.
 
+
+# Design
+### UML diagram
+
 ##APP - MAIN
 
 
 
 
 ##Controller
-
+### TwitterController
 The TwitterController object controls if the all required arguments have been passed to the program and then calls the service layer.
 
 ##Service
-
+### TwitterService
 The service layer will handle the business logic of the application.  The process will be done by checking the length of the tweets are correct , also it will verify that the longitude and latitude are correct. It will call the DAO layer afterwards.
 
 ##DAO
-
+### TwitterDAO
 The Data Access Objects will extract the necessary data, and communicates with the data source.The Dao object will create the Rest-API that will check the required functionality per the correct format required by the Twitter. It calls the HTTP methods using the Helper object of Twitter.
-
+Dao object does not handle business logic
 ##MODELS
 
 Data model of the Tweet object contains subtypes of data fields are used by Twitter's API to store information. It mainly uses  Twitter's Data Dictionary v1.1  concept:  https://developer.twitter.com/en/docs/twitter-api/v1/data-dictionary/object-model/tweet
@@ -89,13 +93,34 @@ UserMentions contains user_mentions object
 
 Coordinates contain coordinates object
 
+#### Object model sample
+```{
+  "created_at" : "Fri Jun 26 17:32:16 +0000 2020",
+  "id" : 1276568976764686343,
+  "id_str" : "1276568976764686343",
+  "text" : "test post",
+  "entities" : {
+    "hashtags" : [ ],
+    "user_mentions" : [ ]
+  },
+  "coordinates" : {
+    "coordinates" : [ 79.0, 43.0 ],
+    "type" : "Point"
+  },
+  "retweet_count" : 0,
+  "favourite_count" : 0,
+  "favourited" : false,
+  "retweeted" : false
+} ```
+
 ##SPRING
 The framework of Spring was utilised to manage dependencies by using Maven. Classes were annotated with @Component, @controller, @service and @repository  that flags to indicate the Beans to the Inversion of Control container. Lastly, once Spring injects the dependencies , application can run with SpringBoot.
 
 
 # Test
+#### Integration Test
 JUnit version 4 was used for integration testing of the various application layers.Instead of executing actual Twitter API calls, which required genuine Twitter keys, the Mockito Framework was utilised to test unit testing using mock objects.
-
+#### Unit Test
 # Deployment
 
 Application Dockerized by using Docker image. Creating docker file allows us to carry openjdk:8-alpine configurations that will deploy java code which packaged by maven  into docker image.
