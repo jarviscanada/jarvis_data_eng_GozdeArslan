@@ -1,2 +1,4 @@
-package ca.jrvs.practice.dataStructure;public class isEqualMap {
+package ca.jrvs.practice.dataStructure;
+
+public class isEqualMap {
 }
