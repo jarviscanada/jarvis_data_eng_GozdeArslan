@@ -19,7 +19,7 @@ public class JavaGrepImp implements JavaGrep {
 
 
     public static void main(String[] args) throws IOException {
-
+        @Test
         if(args.length!=3){
 
             throw new IllegalArgumentException("Error!! USAGE: JavaGrep Regex outFile rootPath");
