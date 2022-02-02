@@ -22,14 +22,16 @@ skills:
     - HTML
     - Docker
     - MongoDB
+    - DBeaver
 
   familiar:
     - Python
+    - Pandas
     - R
     - Spark
     - Power BI
+    - Cloud Computing
     - Java Script
-    - Statistics
 
 
 jarvis_projects:
@@ -41,7 +43,7 @@ jarvis_projects:
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - " Twitter App: Currently working on the project."
+      - " Twitter App: Implemented a ."
       - " JDBC App: Developed a Java Database Connection(JDBC) application that enables a connection between a Java program and a relational database management system (RDBMS). Implementation was completed by using  Java 8, RDBMS(PostgreSQL), Maven, Docker, IntelliJ IDEA, and Git/Git Flow. The application utilizes data access objects(DAOs) and Repository Architectural Patterns also certain advanced JDBC principles. Implemented CRUD operations for multiple DAOs that tested on the SQL queries. Maven build automation tools were used to handle the project. Testing and debugging were performed on the IntelliJ IDEA."
       - " Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage of memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git/Git Flow." 
         
