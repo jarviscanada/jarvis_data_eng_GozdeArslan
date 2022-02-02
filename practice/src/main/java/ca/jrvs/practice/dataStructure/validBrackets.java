@@ -1,4 +1,4 @@
 package ca.jrvs.practice.dataStructure;
 
-public class IsOdd {
+public class validBrackets {
 }
