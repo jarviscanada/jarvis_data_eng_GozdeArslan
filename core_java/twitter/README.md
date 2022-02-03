@@ -9,7 +9,7 @@ The CRUD application for Twitter allows users to create, read, and remove tweets
 
     - Junit - Mockito
 
-    - SpringBoot
+    - Spring FrameWork
 
     - Docker(To run app within container)
 
