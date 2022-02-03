@@ -1,14 +1,14 @@
 # Gozde Arslan . Jarvis Consulting
 
-After working on several engineering projects that incorporated data-driven software tools, I determined to sharpen my software abilities to put my passion for the software and data industries to practical use. Along with this, I am a recent Seneca College Computer Science graduate. Throughout my studies, I have worked on a variety of projects in object-oriented programming, database management, and web development. Involved in and handled many team initiatives that aided in the development of various teamwork roles and leadership skills. Working as a software and data engineer or analyst position piqued my interest. I'm presently employed as a data engineer associate at the Jarvis Consulting Group, where I develop software applications using Linux and Java tools while adhering to the Agile/Scrum techniques.
+After working on several engineering projects that incorporated data-driven software tools, I determined to sharpen my software abilities to put my passion for the software and data industries to practical use. Along with this, I am a recent Seneca College Computer Science graduate. Throughout my studies, I have worked on a variety of projects in object-oriented programming, database management, and web development. Involved in and handled many team initiatives that aided in the development of various teamwork roles and leadership skills. Working as a software and data engineer or analyst position piqued my interest. I'm presently employed as a data engineer associate at the Jarvis Consulting Group, where I develop software applications using Linux, Java, and data communication tools while adhering to the Agile/Scrum techniques.
 
 ## Skills
 
 **Proficient:** Linux/Bash, RDBMS/SQL, PL/SQL, Agile/Scrum, Git/Git Flow
 
-**Competent:** Java, C/C++, HTML, Docker, MongoDB
+**Competent:** Java, C/C++, HTML, Docker, MongoDB, DBeaver
 
-**Familiar:** Python, R, Spark, Power BI, Java Script, Statistics
+**Familiar:** Python, Pandas, R, Spark, Power BI, Cloud Computing, Java Script
 
 ## Jarvis Projects
 
@@ -19,9 +19,11 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/core_java)]:
       
-  -  Twitter App: Currently working on the project.
-  -  JDBC App: Developed a Java Database Connection(JDBC) application that enables a connection between a Java program and a relational database management system (RDBMS). Implementation was completed by using  Java 8, RDBMS(PostgreSQL), Maven, Docker, IntelliJ IDEA, and Git/Git Flow. The application utilizes data access objects(DAOs) and Repository Architectural Patterns also certain advanced JDBC principles. Implemented CRUD operations for multiple DAOs that tested on the SQL queries. Maven build automation tools were used to handle the project. Testing and debugging were performed on the IntelliJ IDEA.
-  -  Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage of memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git/Git Flow.
+  - Twitter App: Developed a Java Twitter application that allows users to create, read, and delete tweets by using Twitter REST APIs. The MVC (Model, View, Controller) design model was used to implement the application. Additionally, mainstream technologies such as Java and IntelliJ IDEA were used to build the application. The Dependency Management (DM) was implemented using the Spring framework, which was integrated with the Maven package management framework. The application was deployed using Docker Components and then uploaded to Docker Hub. JUnit and Mockito were ultimately utilized to complete the testing process.
+  - JDBC App: Developed a Java Database Connection(JDBC) application that enables a connection between a Java program and a relational database management system (RDBMS). Implementation was completed by using Java 8, RDBMS(PostgreSQL), Maven, Docker, IntelliJ IDEA, and Git/Git Flow. The application utilizes data access objects(DAOs) and Repository Architectural Patterns also certain advanced JDBC principles. Implemented CRUD operations for multiple DAOs that tested on the SQL queries. Maven build automation tools were used to handle the project. Testing and debugging were performed on the IntelliJ IDEA.
+  - Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage of memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git/Git Flow.
+
+**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/python_data_analytics)]: Currently working on project. 
 
 
 ## Highlighted Projects
