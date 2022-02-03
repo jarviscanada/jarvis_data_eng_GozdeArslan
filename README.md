@@ -8,7 +8,7 @@ After working on several engineering projects that incorporated data-driven soft
 
 **Competent:** Java, C/C++, HTML, Docker, MongoDB, DBeaver
 
-**Familiar:** Python, Pandas, R, Spark, Power BI, Cloud Computing, Java Script
+**Familiar:** Python, R, Spark, Power BI, Cloud Computing, Java Script
 
 ## Jarvis Projects
 
