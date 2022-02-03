@@ -2,7 +2,7 @@
 name: "Gozde Arslan"
 github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan
 
-summary: After working on several engineering projects that incorporated data-driven software tools, I determined to sharpen my software abilities to put my passion for the software and data industries to effective use. Along with this, I am a recent Seneca College Computer Science graduate. Throughout my studies, I have worked on a variety of research projects in object-oriented programming, database management, and web development. Involved in and handled many team initiatives that aided in the development of various teamwork roles and leadership skills. Working as a data engineer or analyst position piqued my interest. I'm presently employed as a data engineer associate at the Jarvis Consulting Group, where I develop software applications using Linux and Java tools while adhering to the Agile approach.
+summary: After working on several engineering projects that incorporated data-driven software tools, I determined to sharpen my software abilities to put my passion for the software and data industries to practical use. Along with this, I am a recent Seneca College Computer Science graduate. Throughout my studies, I have worked on a variety of projects in object-oriented programming, database management, and web development. Involved in and handled many team initiatives that aided in the development of various teamwork roles and leadership skills. Working as a software and data engineer or analyst position piqued my interest. I'm presently employed as a data engineer associate at the Jarvis Consulting Group, where I develop software applications using Linux, Java, and data communication tools while adhering to the Agile/Scrum techniques.
 
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
@@ -14,23 +14,23 @@ skills:
     - RDBMS/SQL
     - PL/SQL
     - Agile/Scrum
-    - Git
+    - Git/Git Flow
 
   competent:
-    - C/C++
     - Java
+    - C/C++
     - HTML
-    - ERD
-    - Ms Office
+    - Docker
     - MongoDB
+    - DBeaver
 
   familiar:
-    - Python
+    - Python    
     - R
     - Spark
     - Power BI
+    - Cloud Computing
     - Java Script
-    - Statistics
 
 
 jarvis_projects:
@@ -38,38 +38,32 @@ jarvis_projects:
     git_url: "/linux_sql"
     # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Provided  solutions in the creation of infrastructure for the Jarvis Linux Cluster Administration(LCA) team in regards to server host monitoring. This infrastructure assists the team in examining host statistics and data usage. The monitoring agent servers will run on centOS 7 and will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database every minute(Crontab). The LCA (Jarvis Linux Cluster Administration) team will be able to help servers in need by having records of each node and node monitoring systems "
+    description: "Designed a Linux cluster hardware monitoring agent to screen server host statistics and data usage. Implemented project using various technologies such as CentOS, Bash/Shell, Docker, RDBMS/SQL/PostgreSQL, Crontab, and Git/Git Flow. Bash commands were used to collect host utilization data, which was processed using Crontab. The monitoring agent servers will run within a CentOS 7 environment. The server will save host data (hardware specifications and resource use data) into the (RDBMS) Postgres Database, which is deployed through Docker. Completed implementation on the IntelliJ IDEA which is one of the integrated developer environments. Managed and deployed the project by using Git/Git Flow."
   - name: "Core Java Apps"
     git_url: "/core_java"
     description:
-      - " Twitter App: Currenlty working on app"
-      - " JDBC App: Implemented java database connection application enables a connection between a Java program and a relational database management system (RDBMS).It uses DAO and Repository architectural patterns, as well as certain advanced JDBC principles."
-      - " Grep App: created application to search matching strings within the files by using grep commands.The grep commands will be able to read and write the files in the file directory.Searching the patterns that is done by regular expressions write the results to an output file in the root directory." 
-
-  - name: "Springboot App"
-    git_url: "/springboot"
-    description: ""
+      - "Twitter App: Developed a Java Twitter application that allows users to create, read, and delete tweets by using Twitter REST APIs. The MVC (Model, View, Controller) design model was used to implement the application. Additionally, mainstream technologies such as Java and IntelliJ IDEA were used to build the application. The Dependency Management (DM) was implemented using the Spring framework, which was integrated with the Maven package management framework. The application was deployed using Docker Components and then uploaded to Docker Hub. JUnit and Mockito were ultimately utilized to complete the testing process." 
+      - "JDBC App: Developed a Java Database Connection(JDBC) application that enables a connection between a Java program and a relational database management system (RDBMS). Implementation was completed by using Java 8, RDBMS(PostgreSQL), Maven, Docker, IntelliJ IDEA, and Git/Git Flow. The application utilizes data access objects(DAOs) and Repository Architectural Patterns also certain advanced JDBC principles. Implemented CRUD operations for multiple DAOs that tested on the SQL queries. Maven build automation tools were used to handle the project. Testing and debugging were performed on the IntelliJ IDEA."   
+      - "Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage of memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git/Git Flow." 
   - name: "Python Data Analytics"
-    git_url: "/python_data_anlytics"
-    description: ""
-  - name: "Hadoop"
-    git_url: "/hadoop"
-    description: ""
-  - name: "Spark"
-    git_url: "/spark"
-    description: ""
-  - name: "Cloud/DevOps"
-    git_url: "/cloud_devops"
-    description: ""
-
+    git_url: "/python_data_analytics"
+    description: "Currently working on project. " 
 
 highlighted_projects:
     #project name
-  - name: "Web app for Movie Streaming"
+  - name: "Web App for Movie Streaming"
     #URL is optional
     git_url: "https://github.com/gzarslan/A-movie-website"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Designed movie streaming website in building Dynamic websites and Server-Side Web applications using Node.js and Express."
+    description: "Designed a movie streaming website with features such as movie listings, searching, registration and sign-in, and purchase. Implemented the application using JavaScript, Node.js, Express-Handlebars, CSS, Visual Studio Code, MongoDB, and Heroku. The application uses the MVC(model-view-controller) design pattern that specifies an application consists of a data model, presentation information, and control information. Node.js and express libraries are used to handle the Back-End applications. CSS is used to govern the front-end design. Database managed utilized on MongoDB. Application deployed through Heroku by using GitHub connection."
+    #project name
+  - name: "A Retail Application"
+    #URL is optional
+    git_url: "https://github.com/gzarslan/Database-3/tree/main/assignment2"
+    # The project description must start with an action verb (https://bit.ly/3guO98u)
+    description: "Implemented a retail application that allows a user to add products to a cart for a specific consumer and estimates the overall cost of all the items. The order information is stored in the Oracle database after checkout. The project was developed by using the Oracle, PL/SQL, and C++ programming languages."
+          
+
 #List of professional experience
 #The job description allows hiring managers to understand your job and the technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
 #The description must be more than 25 words. If your experience is not software related, please focus on soft skills and achievements (e.g. team collaboration, problem-solving, improvements, communication).
@@ -79,12 +73,12 @@ professional_experience:
     company: "Jarvis Consulting Group"
     duration: "2021 - present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Used Linux, Java, Docker, and Postgres, designed, created, and tested several software applications. Used Agile Methodologies to collaborate with my team."
+    description: "Develop, test, and maintain various software applications and architectures as Data Engineer. Improve experience with Java, SQL, Linux, PostgreSQL, Docker, and Maven by applying the SDLC best practices. Use Git and Git Flow to manage the versions of each project effectively. Collaborate with developer team by an Agile/Scrum Framework. Organize daily scrum meetings and sprint retrospective meetings. Along with this, I am improving my aptitudes in working on real-world projects, prioritizing the work tasks, and organizing by applying analytical thinking principles."
     
   - title: "Project Data and Method Engineer"
     company: "Jantsa Wheel Industry"
     duration: "2016 - 2018"
-    description: "Analyzed product data to create a new system automation project associated with productionrequirements. Using excel formulas, tables, graphs, and macros, over 1500 products data were retrieved from ERP software into MS Excel to manage deviation and data regulations.Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated.Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values was written as required. Productivity was increased by 20%."
+    description: "Analyzed product data to create a new automation system project associated with production requirements. Using SQL tools over 1500 products data were retrieved from the ERP software program. Excel macros, tables, and graphs were used to manage deviation and data regulations. Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated. Organized weekly update meetings during the project. Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values were written as required. Productivity was increased by 20%."
 
 education:
  
@@ -99,12 +93,12 @@ education:
       - "GPA: 3.7/4.0 "
   - school_name: "Kutahya Dumlupinar University"
     duration: "2010-2014"
-    degree: "Bachelor degree of Engineering"
-    department: "Industrial Engineering"
+    degree: "Bachelor degree in Engineering"
+    department: "Industrial Engineering" 
     awards_achievements:
-      - "Scholarship"
-      - "Dean's List (Summer 2020): GPA : 4.0/4.0"
-      - "GPA: 3.7/4.0 "
+     
+      
+       
 
 others:
 
@@ -112,13 +106,21 @@ others:
    - title: "Certificates"
     #list of items
      bullets:
-        - "Problem Solving Techniques (2017)"
-        - "Team- work training (2017)"
+        - "Problem Solving Techniques certificate (2017)"
+        - "Teamwork training certificate (2017)"
+        - "Complete Python Bootcamp (Udemy)"
+        - "Data Visualization for Data Analysis (Linkedin Learning)"
+    #category
+   - title: "Volunteering"
+      #list of items
+     bullets:
+          - "Volunteering, organization helper member - Dundas West Festival (2018)"
    - title: "Hobbies"
      bullets:
-        - "Reading"
-        - "yoga"
-        - "chess"
+        - "Reading Novel (Sci-Fi)"
+        - "Watching intellectual Youtube channels and TED Talks"
+        - "Games: Chess, Table tennis"
+        - "Yoga"
 
 
 
