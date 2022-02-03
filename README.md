@@ -1,3 +1,13 @@
+
+
+# Jarvis Data Engineering Training
+1. [Linux cluster monitoring agent (Linux and SQL)](./linux_sql) In-progress
+2. [Core Java Apps](./core_java) In-progress
+3. [Springboot Trading REST API](./springboot) In-progress
+4. [Hadoop/Hive](./hadoop) In-progress
+5. [Spark/Scala](./spark) In-progress
+6. [Cloud/DevOps](./cloud_devops) In-progress
+
 # Gozde Arslan . Jarvis Consulting
 
 After working on several engineering projects that incorporated data-driven software tools, I determined to sharpen my software abilities to put my passion for the software and data industries to practical use. Along with this, I am a recent Seneca College Computer Science graduate. Throughout my studies, I have worked on a variety of projects in object-oriented programming, database management, and web development. Involved in and handled many team initiatives that aided in the development of various teamwork roles and leadership skills. Working as a software and data engineer or analyst position piqued my interest. I'm presently employed as a data engineer associate at the Jarvis Consulting Group, where I develop software applications using Linux, Java, and data communication tools while adhering to the Agile/Scrum techniques.
@@ -58,3 +68,4 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 - Watching intellectual Youtube channels and TED Talks
 - Games: Chess, Table tennis
 - Yoga
+
