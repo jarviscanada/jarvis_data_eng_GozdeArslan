@@ -37,3 +37,4 @@ SELECT SUM(unit_price * quantity) FROM retail;
 -- Question 8
 -- Finds total Revenue (format date: YYYYMM )
 
+
