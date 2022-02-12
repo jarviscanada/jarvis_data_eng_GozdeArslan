@@ -6,7 +6,7 @@ import ca.jrvs.apps.twitter.dao.helper.HttpHelper;
 import ca.jrvs.apps.twitter.dao.helper.TwitterHttpHelper;
 import ca.jrvs.apps.twitter.model.Tweet;
 import ca.jrvs.apps.twitter.service.Service;
-import ca.jrvs.apps.twitter.service.TwitterService;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,7 +14,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URISyntaxException;
 import java.util.List;
 
-import static org.junit.Assert.*;
 
 public class TwitterControllerIntTest {
     private TwitterController controller;
