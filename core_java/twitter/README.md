@@ -135,7 +135,7 @@ Coordinates contain coordinates object
 }
 ```
 
-## SPRING
+### SPRING
 
 Maven had been used to manage dependencies using the Spring framework. @Component, @controller, @service, and @repository were used as annotations to signal the Beans to the Inversion of Control container. Ultimately, once Spring has injected the dependencies, SpringBoot can be used to execute the application.
 
