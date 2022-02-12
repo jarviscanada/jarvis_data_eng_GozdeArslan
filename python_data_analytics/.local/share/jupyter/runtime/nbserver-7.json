@@ -3,10 +3,10 @@
   "hostname": "0.0.0.0",
   "notebook_dir": "/home/jovyan",
   "password": false,
-  "pid": 8,
+  "pid": 7,
   "port": 8888,
   "secure": false,
   "sock": "",
-  "token": "7f691f759b27b1197da3c7f873ceb819112ada212fe05052",
+  "token": "c36f890c52a7f5852e16564d68446f2511f19cab4225aa83",
   "url": "http://0.0.0.0:8888/"
 }

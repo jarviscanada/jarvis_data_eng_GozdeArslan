@@ -1,12 +1,12 @@
 # Introduction
-- The London Gift Shop (LGS) is a gift-ware online company established in the United Kingdom. Wholesalers make up a large portion of the company's clientele. Although the company has been operating online stores for more than ten years, revenue has remained flat in recent years. The LGS marketing team aims to use cutting-edge data analytics to better understand their customers and develop sales and marketing strategies. Because the UGS marketing team lacks IT expertise and the UGS IT department lacks the capacity to take on additional projects, the CTO of UGS chooses to work with Jarvis consulting software and data engineering services. You will be responsible for delivering a proof of concept 
-- (POC) project that will assist LGS marketing by evaluating customer shopping behaviour.
-- 
-- Describe the business context of this project (please do not copy-paste text from the project kick-off ticket)
+-The London Gift Shop (LGS) is an online seller of gift items based in the United Kingdom. A significant majority of the company's customers are wholesalers. Despite the fact that the company has been operating online stores for over ten years, revenue has remained consistent in recent years. The LGS marketing team aspires to better understand their clients and develop sales and marketing strategies by utilising cutting-edge data analytics. The CTO of UGS chooses to engage with Jarvis consulting software and data engineering services because the UGS marketing team lacks IT experience and the UGS IT department lacks the capacity to take on more projects. You'll be in charge of completing a proof of concept (POC) project that will aid LGS marketing by understand business purchasing patterns.
+
 - Also, describe how LGS would use your analytic result (hint: see kick-off ticket)
 - technologies used
   - Jupyter Notebook
-  - Python libraries
+  - Python libraries(pandas,Numpy,matplotlib ,sqlalchemy)
+  - Docker
+  - PostGreSQL(OLAP)  
   - data analytics
   - data warehouse
 
