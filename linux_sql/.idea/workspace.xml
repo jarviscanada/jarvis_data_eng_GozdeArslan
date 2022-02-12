@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD:linux_sql/.idea/workspace.xml
     <list default="true" id="ce761aad-6914-4941-9922-159d65f789a7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../profile/profile/jarvis_profile_John_Smith.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../profile/profile/jarvis_profile_John_Smith.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../profile/profile/profile.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../profile/profile/profile.yaml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="7bcd8616-4bae-43aa-80b0-3540d9f6ba7b" name="Changes" comment="" />
+>>>>>>> feature/twitter:practice/.idea/workspace.xml
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
