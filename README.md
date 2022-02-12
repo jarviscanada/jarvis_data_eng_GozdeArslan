@@ -6,9 +6,9 @@ After working on several engineering projects that incorporated data-driven soft
 
 **Proficient:** Linux/Bash, RDBMS/SQL, PL/SQL, Agile/Scrum, Git/Git Flow
 
-**Competent:** Java, C/C++, HTML, Docker, MongoDB, DBeaver
+**Competent:** Java, C/C++, HTML, Docker, MongoDB, DBeaver,
 
-**Familiar:** Python, R, Spark, Power BI, Cloud Computing, Java Script
+**Familiar:** Python, Pandas,numpy, R, Hadoop/Spark, Power BI, Cloud Computing, Java Script
 
 ## Jarvis Projects
 
@@ -34,7 +34,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 ## Professional Experiences
 
-**Data Engineer Associate, Jarvis Consulting Group (2021 - present)**: Develop, test, and maintain various software applications and architectures as Data Engineer. Improve experience with Java, SQL, Linux, PostgreSQL, Docker, and Maven by applying the SDLC best practices. Use Git and Git Flow to manage the versions of each project effectively. Collaborate with developer team by an Agile/Scrum Framework. Organize daily scrum meetings and sprint retrospective meetings. Along with this, I am improving my aptitudes in working on real-world projects, prioritizing the work tasks, and organizing by applying analytical thinking principles.
+**Data Engineer Associate, Jarvis Consulting Group (2021 - present)**: Develop, test, and maintain various software applications and architectures as Data Engineer. Improve experience with Java, SQL, Linux, PostgreSQL, Docker, and Maven by applying the SDLC best practices. Use Git and Git Flow to manage the versions of each project effectively. Collaborate with developer team by an Agile/Scrum Framework.As a team leader, Organize daily scrum meetings and sprint retrospective meetings. Along with this, I am improving my aptitudes in working on real-world projects, prioritizing the work tasks, and organizing by applying analytical thinking principles.
 
 **Project Data and Method Engineer, Jantsa Wheel Industry (2016 - 2018)**: Analyzed product data to create a new automation system project associated with production requirements. Using SQL tools over 1500 products data were retrieved from the ERP software program. Excel macros, tables, and graphs were used to manage deviation and data regulations. Data components were used, product time measurements were taken, and statistical process control analysis was performed (SPC). On the based products, 70% of data variances were eliminated. Organized weekly update meetings during the project. Results and evaluations were presented to the project team as well as the managers, and an executive summary describing the values were written as required. Productivity was increased by 20%.
 
