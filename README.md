@@ -4,11 +4,11 @@ After working on several engineering projects that incorporated data-driven soft
 
 ## Skills
 
-**Proficient:** Linux/Bash, RDBMS/SQL, PL/SQL, Agile/Scrum, Git/Git Flow
+**Proficient:** Linux/Bash, RDBMS/SQL, HQL, Agile/Scrum, Git/Git Flow
 
 **Competent:** Java, C/C++, HTML, Docker, MongoDB, DBeaver, Data visualization
 
-**Familiar:** Python, Pandas, Numpy, R, Hadoop/Spark, Power BI, Cloud Computing, Java Script
+**Familiar:** Python, Pandas, Numpy, R, Hadoop/Spark, Hive, YARN, Zeppelin, Power BI, Cloud Computing, Java Script
 
 ## Jarvis Projects
 
@@ -24,6 +24,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
   - Grep App: Reimplemented an application to search matching patterns within the files by using grep commands. Developed the application using Java 8, Maven, Docker, IntelliJ IDEA, and Git/Git Flow. Application package tools managed by the Maven-based on the project object model. Docker handled deploying the application via Docker Hub. Using Java 8 Stream APIs and Lambdas were assisted in effectively managing the usage of memory. Testing and debugging were accomplished on the IntelliJ IDEA. Versions and collaborations controlled using Git/Git Flow.
 
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/python_data_analytics)]: Currently working on project. 
+
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/Hadoop)]: Solved business problems by using Core Hadoop components such as HDFS, MapReduce, and YARN, which process large amounts of data provided by an analytics team. This Hadoop project will assist us in evaluating the Hadoop ecosystem and how it interacts with a distributed system for data storage and processing. Apache Hive and Zeppelin Notebook were used to handle the business problem. The Google Cloud Platform's data proc function enables the Hadoop cluster to use several machines to manage  dataset, which utilizes one master node and two worker nodes in the cluster and uses Hive. Project versions are controlled by Git/Git Flow
 
 
 ## Highlighted Projects
