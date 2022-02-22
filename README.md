@@ -25,7 +25,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_GozdeArsla
 
 **Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/python_data_analytics)]: Currently working on project. 
 
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/Hadoop)]: Solved business problems by using Core Hadoop components such as HDFS, MapReduce, and YARN, which process large amounts of data provided by an analytics team. This Hadoop project will assist us in evaluating the Hadoop ecosystem and how it interacts with a distributed system for data storage and processing. Apache Hive and Zeppelin Notebook were used to handle the business problem. The Google Cloud Platform's data proc function enables the Hadoop cluster to use several machines to manage  dataset, which utilizes one master node and two worker nodes in the cluster and uses Hive. Project versions are controlled by Git/Git Flow
+**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_GozdeArslan/tree/master/Hadoop)]: Solved business problems by using Core Hadoop components such as HDFS, MapReduce, and YARN, which process large amounts of data provided by an analytics team. This Hadoop project will assist us in evaluating the Hadoop ecosystem and how it interacts with a distributed system for data storage and processing. Apache Hive and Zeppelin Notebook were used to handle the business problem. The Google Cloud Platform's data proc function enables the Hadoop cluster to use several machines to manage  dataset, which utilizes one master node and two worker nodes in the cluster and uses Hive. Project versions are controlled by Git/Git Flow.
 
 
 ## Highlighted Projects
