@@ -12,7 +12,7 @@ skills:
   proficient:
     - Linux/Bash
     - RDBMS/SQL
-    - PL/SQL
+    - HQL
     - Agile/Scrum
     - Git/Git Flow
 
@@ -24,13 +24,13 @@ skills:
     - MongoDB
     - DBeaver
     - Data visualization
-    
 
   familiar:
     - Python
     - Pandas, Numpy    
     - R
-    - Hadoop/Spark
+    - Hadoop/Spark, Hive, YARN
+    - Zeppelin
     - Power BI
     - Cloud Computing
     - Java Script
@@ -51,6 +51,10 @@ jarvis_projects:
   - name: "Python Data Analytics"
     git_url: "/python_data_analytics"
     description: "Currently working on project. " 
+ 
+  - name: "Hadoop"
+    git_url: "/Hadoop"
+    description: "Solved business problems by using Core Hadoop components such as HDFS, MapReduce, and YARN, which process large amounts of data provided by an analytics team. This Hadoop project will assist us in evaluating the Hadoop ecosystem and how it interacts with a distributed system for data storage and processing. Apache Hive and Zeppelin Notebook were used to handle the business problem. The Google Cloud Platform's data proc function enables the Hadoop cluster to use several machines to manage  dataset, which utilizes one master node and two worker nodes in the cluster and uses Hive. Project versions are controlled by Git/Git Flow"
 
 highlighted_projects:
     #project name
