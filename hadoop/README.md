@@ -1,6 +1,10 @@
 Table of contents
 * [Introduction](#Introduction)
 
+* [Hadoop Cluster](#Hadoop_Cluster)
+
+* [Hive Project](#Hive_Project)
+
 
 # Introduction
 
