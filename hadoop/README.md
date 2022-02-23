@@ -57,7 +57,39 @@ Also, it merges data from different servers and returns a compacted output to th
 
 # Hive Project
 
-![image](https://i.imgur.com/sLCYwEW.jpg)
+
+
+![image](https://i.imgur.com/88joWrw.jpg)
+![image](https://i.imgur.com/bbXDdGt.jpg)
+![image](https://i.imgur.com/uI2LPjm.jpg)
+![image](https://i.imgur.com/jBmcmNV.jpg)
+![image](https://i.imgur.com/JzAIaLU.jpg)
+![image](https://i.imgur.com/nXXqHxK.jpg)
+![image](https://i.imgur.com/MeIYemW.jpg)
+![image](https://i.imgur.com/N3WiAic.jpg)
+![image](https://i.imgur.com/LatRqtH.jpg)
+![image](https://i.imgur.com/FjFRwdy.jpg)
+![image](https://i.imgur.com/ygmLpFQ.jpg)
+![image](https://i.imgur.com/lzh6YK2.jpg)
+![image](https://i.imgur.com/EQTfPMf.jpg)
+![image](https://i.imgur.com/aRiGdVo.jpg)
+![image](https://i.imgur.com/FpVN4p1.jpg)
+![image](https://i.imgur.com/nwZnU5Q.jpg)
+![image](https://i.imgur.com/08ura5n.jpg)
+![image](https://i.imgur.com/xqMjr2s.jpg)
+![image](https://i.imgur.com/UoK3S56.jpg)
+![image](https://i.imgur.com/IEXA7Wj.jpg)
+![image](https://i.imgur.com/UB2DDXc.jpg)
+![image](https://i.imgur.com/Kt5eOnr.jpg)
+![image](https://i.imgur.com/GSFpphS.jpg)
+![image](https://i.imgur.com/p1usZbL.jpg)
+![image](https://i.imgur.com/y6v71Dn.jpg)
+![image](https://i.imgur.com/qvq3Zir.jpg)
+![image](https://i.imgur.com/XRJAc8H.jpg)
+![image](https://i.imgur.com/2fBwtV6.jpg)
+![image](https://i.imgur.com/aM2umz1.jpg)
+
+
 
 # Improvements
 - Adding more  and different nodes specifications to increase performance for hadoop cluster.
