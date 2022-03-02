@@ -1,3 +1,7 @@
+
+
+import scala.Byte.MinValue
+import scala.io.Source
 /**
  * Count number of elements
  * Get the first element
@@ -14,6 +18,13 @@
  */
 val ls = List.range(0,10)
 //write you solution here
+println(ls.size)
+println(ls.head)
+println(ls.last)
+println(ls.takeRight(5))
+
+
+
 
 
 /**
@@ -22,9 +33,20 @@ val ls = List.range(0,10)
  *
  * Compare flatMap VS ls.map().flatten
  */
+
+  // flatten is more efficient, and conveys a clearer intent.
 val numList = List(List(1,2), List(3));
 //write you solution here
 
+def x_= (s:Int): Unit= {
+
+  numList.flatMap(y=>y.map(_*2))
+
+}
+// use flatMap when need to do a map with a function other than identity
+
+var doubleL1 = numList.flatMap(y=>y.map(_*2))
+var doubleL2 = numList.map(y=>y.map(_*2)).flatten
 
 
 /**
@@ -35,7 +57,7 @@ val numList = List(List(1,2), List(3));
  * https://stackoverflow.com/questions/7764197/difference-between-foldleft-and-reduceleft-in-scala
  */
 //write you solution here
-
+//with sum
 
 /**
  * Practice Map and Optional
