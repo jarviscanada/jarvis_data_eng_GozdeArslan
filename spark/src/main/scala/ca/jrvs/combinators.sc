@@ -59,6 +59,11 @@ var doubleL2 = numList.map(y=>y.map(_*2)).flatten
 //write you solution here
 //with sum
 
+val m1 = List(1, 11)
+var resultWithSum=m1.sum
+var resultWithReduce = m1.reduce((x,y)=>x+y)
+var resultWithFoldLeft = m1.foldLeft(0)((x:Int,y:Int)=>x+y)
+var resultWithFoldLeft = m1.foldLeft(0)(_+_)
 /**
  * Practice Map and Optional
  *
