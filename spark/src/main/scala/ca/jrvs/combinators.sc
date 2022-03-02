@@ -87,7 +87,9 @@ countryMap.getOrElse("edward", "n/a")
  */
 val names = List("Amy", "Sam", "Eric", "Amy")
 //write you solution here
-
+var list = names.map((i:String)=>{
+  (i,countryMap.getOrElse(i,"n/a"))
+})
 /**
  * Map question3:
  *
