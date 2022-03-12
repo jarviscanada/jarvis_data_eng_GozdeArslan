@@ -1,5 +1,3 @@
-
-
 import scala.Byte.MinValue
 import scala.io.Source
 /**
@@ -98,8 +96,8 @@ var list = names.map((i:String)=>{
  * hint: map(get_value_from_map) ; groupBy country; map to (country,count)
  */
 //write you solution here
-
-
+//val countryCount=list.groupBy(countryMap).mapValues(_.size)
+val countryCount2=list.groupBy(_._2).mapValues(names.size)
 
 
 
@@ -110,6 +108,7 @@ var list = names.map((i:String)=>{
 val names2 = List("Amy", "Bob", "Chris", "Dann")
 //write you solution here
 
+//val numberName=names2.groupBy(_._2)mapValues(_.size)
 
 /**
  * SQL questions1:
@@ -119,6 +118,10 @@ val names2 = List("Amy", "Bob", "Chris", "Dann")
  */
 //write you solution here
 
+val sourceLine = Source.fromFile("/home/centos/dev/jarvis_data_eng_GozdeArslan/spark/src/main/resources/employees.csv")
+for (line <- sourceLine.getLines().map(_.split(",")).toList)
+  println(line)
+sourceLine.close()
 
 /**
  * SQL questions2:
@@ -127,6 +130,11 @@ val names2 = List("Amy", "Bob", "Chris", "Dann")
  * e.g. employees: List[Employee] = List(Employee(1,amy,toronto), Employee(2,bob,calgary), Employee(3,chris,toronto), Employee(4,dann,montreal))
  */
 //write you solution here
+class Employee(var id: Int, var name: String, var city: String, var age: Int = 0) {
+  override def toString: String = s"Employee($id, $name, $city, $age)"
+}
+var employee = sourceLine.map((list) =>new Employee(id = 123, name = "john", city = "toronto", age = 44))
+
 
 
 /**
@@ -141,8 +149,10 @@ val names2 = List("Amy", "Bob", "Chris", "Dann")
  */
 //write you solution here
 
+var results0 = employee.map((emp: Employee) =>
+  new Employee(emp.id, emp.name, emp.city.toUpperCase, emp.age))
 
-
+println(results0)
 /**
  * SQL questions4:
  *
@@ -155,7 +165,7 @@ val names2 = List("Amy", "Bob", "Chris", "Dann")
  * res5: List[Employee] = List(Employee(1,amy,TORONTO,20), Employee(3,chris,TORONTO,20), Employee(5,eric,TORONTO,22))
  */
 //write you solution here
-
+var results1 = results0.filter(emp => emp.city == "toronto")
 
 /**
  * SQL questions5:
@@ -170,7 +180,7 @@ val names2 = List("Amy", "Bob", "Chris", "Dann")
  * cityNum: scala.collection.immutable.Map[String,Int] = Map(CALGARY -> 1, TORONTO -> 3, MONTREAL -> 1)
  */
 //write you solution here
-
+var results2 = results0.groupBy(_.city).mapValues(_.size)
 
 /**
  * SQL questions6:
@@ -185,3 +195,5 @@ val names2 = List("Amy", "Bob", "Chris", "Dann")
  * res6: scala.collection.immutable.Map[(String, Int),Int] = Map((MONTREAL,21) -> 1, (CALGARY,19) -> 1, (TORONTO,20) -> 2, (TORONTO,22) -> 1)
  */
 //write you solution here
+
+var results3 = results0.groupBy(e => (e.city, e.age)).mapValues(_.size)
