@@ -3,15 +3,15 @@
 
 -   - Technologies used in this project ;
 
-    - Apache Spark
+     - Apache Spark
     
-    - Scala/Python/pySpark
+     - Scala/Python/pySpark
   
-    - Azure Cloud Platform/Azure Storage/Databricks/Structured APIs /Data Set
+     - Azure Cloud Platform/Azure Storage/Databricks/Structured APIs /Data Set
   
-    - Zeppelin
+     - Zeppelin
 
-    - Git / Github
+     - Git / Github
 
 
 # Databricks and Hadoop Implementation
